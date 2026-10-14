@@ -1,0 +1,1809 @@
+{
+  "dataset": "ISIC 2018 Task 1 training subset",
+  "seed": 2026,
+  "image_url": "https://isic-archive.s3.amazonaws.com/challenges/2018/ISIC2018_Task1-2_Training_Input.zip",
+  "mask_url": "https://isic-archive.s3.amazonaws.com/challenges/2018/ISIC2018_Task1_Training_GroundTruth.zip",
+  "license": "CC-BY-NC 4.0; see DATA_LICENSE.md",
+  "records": [
+    {
+      "id": "ISIC_0013573",
+      "split": "development",
+      "image_sha256": "3d24fc333e17fb3064440673c65cfd7166a56b1d822dff0743f36565b0d2a69a",
+      "mask_sha256": "8da6822ef8ea6427c5e51ef5d901a176ce989143c5fbb8e5e60198c664983ac7"
+    },
+    {
+      "id": "ISIC_0014059",
+      "split": "development",
+      "image_sha256": "9ddeeb0168d763b2f2733ca06efa05f3122ed87435894619b01e0a9cd47064e7",
+      "mask_sha256": "8f3c82fc2004261631b466174aec46b059ef957b3f743d4ca89cadd76365bf22"
+    },
+    {
+      "id": "ISIC_0010018",
+      "split": "development",
+      "image_sha256": "52ea3f5051363127e5c44a9cd7d3f3ac1aeca8e9bb882aad53dfe16e24620b04",
+      "mask_sha256": "cd80cab71efafae0a61cdee3e7cc6617f58996ecc55b081063211d92a1bde2d8"
+    },
+    {
+      "id": "ISIC_0012681",
+      "split": "development",
+      "image_sha256": "a60d034add726ec44b68447d58b1fd970d2d5ce971a89a195bcbcf286e189f5c",
+      "mask_sha256": "a15623155db809bc219479500c4572c11c906a61cb8b57b33cac9593b79cde07"
+    },
+    {
+      "id": "ISIC_0000317",
+      "split": "development",
+      "image_sha256": "672b068b73a608b895679ad5c8e36e80560dc5c8b37c79a8c24f930a59b233c0",
+      "mask_sha256": "f0924319106f2373e46a8ede53359d924f601de6aa725329243e26f1291eb2f0"
+    },
+    {
+      "id": "ISIC_0014337",
+      "split": "development",
+      "image_sha256": "cefbec98a2c1f1a22ebd9325496031f28bc389a7ad667f8a8b4476c4480082c9",
+      "mask_sha256": "bb57012b2322b17505664e6494ff3790a098e1506247bafffdcaa07f1a657594"
+    },
+    {
+      "id": "ISIC_0000295",
+      "split": "development",
+      "image_sha256": "37dcd21622fc65c1a185483a34cacda0b1580faacc82532462968fafe6ce3633",
+      "mask_sha256": "c630055e16ad173b7baf30295a44e3e0cac0a120ff2af7e86d984a32c5f2742b"
+    },
+    {
+      "id": "ISIC_0010029",
+      "split": "development",
+      "image_sha256": "bdb5d0e484f4a57f84e913542661af3cf946abbe2b9ffb0f824f3e887dc15043",
+      "mask_sha256": "cb5e530620cfc31c5d0b43793cce655567626201f80d561ce1af604f75822996"
+    },
+    {
+      "id": "ISIC_0013603",
+      "split": "development",
+      "image_sha256": "7b54700119d8b5f700666d62508cba1e698e3dac4ca46ec56b46189e1b8d85b7",
+      "mask_sha256": "36ce97203f7bf183449a19c7439edd21d04c5aed950623108cec47893c5c6615"
+    },
+    {
+      "id": "ISIC_0013690",
+      "split": "development",
+      "image_sha256": "edf63b9c41b057dec0e05d4a62b27ef412580158757bd75d84ba08130ca140dd",
+      "mask_sha256": "bb3dcd9c71bf6a39a87098d9e0209ad5b429e762b623e188afa1bcfb18bf2dba"
+    },
+    {
+      "id": "ISIC_0014962",
+      "split": "development",
+      "image_sha256": "64d3edfc3c79c077a81a4db34d4f41cc2695625113ec0b838ef43abb088a8aa6",
+      "mask_sha256": "e18c31a38ec301368caef1d03dc117e720799f31552e6ded770a292786240e34"
+    },
+    {
+      "id": "ISIC_0000306",
+      "split": "development",
+      "image_sha256": "47065c440ea56be34bf7653d2d62d6573de59adb076fb1fff780fc2d79840ed7",
+      "mask_sha256": "28526f27945ca8d649a6fa0b75476ed04be1c5c11a88f9cf7912e95eca20d3b9"
+    },
+    {
+      "id": "ISIC_0013359",
+      "split": "development",
+      "image_sha256": "31d3d9d3a02707f8997e289c54898d4f87613639e761716f5b19b71a24008f8b",
+      "mask_sha256": "ce6c2a6534272a51aad3c89fbfc0062daa95db1f824997314176b47749983070"
+    },
+    {
+      "id": "ISIC_0015310",
+      "split": "development",
+      "image_sha256": "b054f8111ae0e30e31a60bbe5014108ee9464dd2b83924ba17e1de34ace95645",
+      "mask_sha256": "7cad1653103f98e68a4c21c806bc05c96bb9c21639eee55cfa4fdde4278abd7b"
+    },
+    {
+      "id": "ISIC_0000055",
+      "split": "development",
+      "image_sha256": "c3e2a724835dfa6b25ea95dfa92295882b393fbff3cec7ee7fa0b8928bae1204",
+      "mask_sha256": "aec3ddc421312c43465a849f54e1c93675d004010b56f70e5b2e1a610685d423"
+    },
+    {
+      "id": "ISIC_0015018",
+      "split": "development",
+      "image_sha256": "bfd49faa92267a3dc550aec3ffffc65dd087c3d73f8a3e61c026a63361162363",
+      "mask_sha256": "7d2435f312f478b3f8b925a7bd05c1fb41f054adb77b6b86e209eaaed9df85fe"
+    },
+    {
+      "id": "ISIC_0015207",
+      "split": "development",
+      "image_sha256": "0a07115390cc44347a9b0e614889b04fecf1a388ccb56fd35b211e2569793ae0",
+      "mask_sha256": "1469965b6e5454f75a6e67a3b67e66683036d3892eb634d6e74f760f1448d771"
+    },
+    {
+      "id": "ISIC_0008998",
+      "split": "development",
+      "image_sha256": "6c8fb7a6f08125c6a70315814b7718f8e6762c96279304a5b5656425ff45a01c",
+      "mask_sha256": "e63befca45d8ae1d391b01c281820d09ec6e2211965a49fdf3fced15a51fc076"
+    },
+    {
+      "id": "ISIC_0006914",
+      "split": "development",
+      "image_sha256": "75efbcf792e5396b76a1661db9f2f36b2f8582c7836db99ed3024b3134fc58b2",
+      "mask_sha256": "8e1ac5e273b801a30ed9a1ec71ece9b9dd67a14e4d5d24322bee9959d112a9a6"
+    },
+    {
+      "id": "ISIC_0016048",
+      "split": "development",
+      "image_sha256": "f8ebf6f4f88dcf8cf3ba7498d3c1e6cca293db9203cdf57fa16daab887d0272a",
+      "mask_sha256": "8f88e216cd0a904bcd5cbf95a846375a7c81220705c1636b9cd9adebc07ba8d3"
+    },
+    {
+      "id": "ISIC_0016050",
+      "split": "development",
+      "image_sha256": "db361b74a5f41e0b4acbae64159ab1db8c6384aabdcdd5e1211826b07239eb2d",
+      "mask_sha256": "70bfd8f247b83889e4362de7d18770a857d6845c604d86598a665aec9ba22995"
+    },
+    {
+      "id": "ISIC_0010169",
+      "split": "development",
+      "image_sha256": "fedb72f195cd6b964aee36b29471807a2b0e487166ba95f227af5486ebefe735",
+      "mask_sha256": "b7c3b9af074e0d2751be337fa5e4571816924d2ac9140435ceaf173927af2e7c"
+    },
+    {
+      "id": "ISIC_0015994",
+      "split": "development",
+      "image_sha256": "cdb2750964e301dc9ce55c359394138694dd17135d428e11a3d403518b4be8a4",
+      "mask_sha256": "8626c57b4c9b88ac2ef2df8d0edcfb17aeaa3c9df2dcd4b3565d7545ab680ecc"
+    },
+    {
+      "id": "ISIC_0014664",
+      "split": "development",
+      "image_sha256": "4df0ea7c66d278d9ccd04a3373f5a1b05ecd7af31a4413626abcbf08f90a34a3",
+      "mask_sha256": "c29e4d7e31104df3d0b651cf8772ce019972bc97cdd8701e70a9fc7633db8d29"
+    },
+    {
+      "id": "ISIC_0013738",
+      "split": "development",
+      "image_sha256": "2b045a5fc166a53b99a07f9e85d7ef6468fe3e76d3b87fdbc925b05b3a5a8189",
+      "mask_sha256": "c5d52f07275e6bdf1ef1d91ffae4b5ddef38df2667ed83689b1b114689c0172a"
+    },
+    {
+      "id": "ISIC_0012333",
+      "split": "development",
+      "image_sha256": "ef03db22fce59187f38770b207ff32b895795c2d6d5a20ee8f53315f28cfe537",
+      "mask_sha256": "ae1b85fafaa4ec9df8fb6bbb0e031d71e8ed867422dd005cd8ea321d17f3128a"
+    },
+    {
+      "id": "ISIC_0000313",
+      "split": "development",
+      "image_sha256": "f905bff2f36766a814b4a2660b57dc07960b6030a95fcd6cacdd25ca82f346fd",
+      "mask_sha256": "b2a1248e555ceda199bcf29e6ddca62e9d3ecaee026c885b1d8c4a2713a7f6d6"
+    },
+    {
+      "id": "ISIC_0009953",
+      "split": "development",
+      "image_sha256": "52dc95b8d1eb25e669bd3d33cf97a21c54842276a8a35f9806a2b6a2352e03d8",
+      "mask_sha256": "4836c778c9c2a8228abeb49d7f3f69ce196da12406745c9fb168d32631863bcf"
+    },
+    {
+      "id": "ISIC_0012518",
+      "split": "development",
+      "image_sha256": "68daa3cca6fdfec7f1c2360e169aa0ee5aaca84fd041ddaf0d757c81be8fefac",
+      "mask_sha256": "96d3d4ea1ff0516275b87b55aca0f410064e0a485f4d7105ccfea29e9e3f8b71"
+    },
+    {
+      "id": "ISIC_0013167",
+      "split": "development",
+      "image_sha256": "16f80e363d85730eda02fcf39c22db63099795021f4d200ac0c8d9f851e0d6e3",
+      "mask_sha256": "88c45f1ab1746cd7fe8cd68f727b42e6fe120ee90a5903e0004f0ee423ff9da5"
+    },
+    {
+      "id": "ISIC_0009925",
+      "split": "development",
+      "image_sha256": "f58dbb3059c022eb7b2992359d1519e7d8bb14c74f2afee4fa0162a123751933",
+      "mask_sha256": "7459b0205125022528088bd6de9b370ec9d9fb3416be2b402f68d0a28b539b1c"
+    },
+    {
+      "id": "ISIC_0010445",
+      "split": "development",
+      "image_sha256": "0685eb82201be9309940cb52f03352006b6bd7877bc4f9f20c83dd1b9c1f8705",
+      "mask_sha256": "94ce2bf4b43db12307319161073742f5824f57763f22bc5677ab1fc5266508a3"
+    },
+    {
+      "id": "ISIC_0013271",
+      "split": "development",
+      "image_sha256": "ff054d949ac3580789168da1fa2169e5dccfe9da6c0f7fe8c96ade7ea9bfe962",
+      "mask_sha256": "ea34db8ba2b741aba638ce0c32ed4d89fbaab8fd0eb6295025b59235cb4a90e5"
+    },
+    {
+      "id": "ISIC_0014372",
+      "split": "development",
+      "image_sha256": "333960857501d040187f552f3c58c1e9e043c395e77013defa3d7d1e956228fc",
+      "mask_sha256": "a64a940beac6723254a5daeac33ff1eea7056f2ed5cf9d5f776bc6dd90182b48"
+    },
+    {
+      "id": "ISIC_0014806",
+      "split": "development",
+      "image_sha256": "382aba9559d2036ef89d7f5b078148fd6db455a4504af67b2bbc332b8dcb51e3",
+      "mask_sha256": "ee16aae56555ed315cc268588d4e0f0c04b890d8f091add28831bd6f21c81762"
+    },
+    {
+      "id": "ISIC_0013015",
+      "split": "development",
+      "image_sha256": "2481c00a5691b296e329010af82877af02128cf32b3a6cd72278e6c8b5be6f7e",
+      "mask_sha256": "4db96e6de5961d35a9a8da7eaf2fba097f3dbcac8237e0182469d79022f5303b"
+    },
+    {
+      "id": "ISIC_0015034",
+      "split": "development",
+      "image_sha256": "f1f78b8412ad85396ce5198b156e3531a0c2988136dc52ab4864b4f69db31a13",
+      "mask_sha256": "0bee86ad674bc04bf51e2179a05949f2baa3bd1945fc551a9b1932d345590aeb"
+    },
+    {
+      "id": "ISIC_0000039",
+      "split": "development",
+      "image_sha256": "bd4387fce0b3c9789e870d8d6c14b3beadd78aaeba99e0d8b230646d2e6308d1",
+      "mask_sha256": "f0f7d5d14023a3f0fbd79954b837796032cd5f391f08e63be667c531da118edf"
+    },
+    {
+      "id": "ISIC_0015161",
+      "split": "development",
+      "image_sha256": "a8bfeb6bb701ac78bc495d070b6fbca2db8a54022ac23876411610e381a1d833",
+      "mask_sha256": "238569b242d0448a4683b7216f38fb358c1a1b1bec9376c04b6ec1f97070c498"
+    },
+    {
+      "id": "ISIC_0014394",
+      "split": "development",
+      "image_sha256": "5be21b9711029acc9a7d67d56be3f40f339cb0a9379c2b72f204193d93f6d80b",
+      "mask_sha256": "e891a5ae2ef14437738490891490d0d0cc6ca818bd1e67168b0f0ad9703fc3b2"
+    },
+    {
+      "id": "ISIC_0014830",
+      "split": "development",
+      "image_sha256": "086a79cf757cb421ff3e5e05394e35302c67f443fd971cc9a55ab54cb1a90c59",
+      "mask_sha256": "c0fc472979ffd0a2025dd5397056947ab90693517748830bb1d4f324b947c2df"
+    },
+    {
+      "id": "ISIC_0014937",
+      "split": "development",
+      "image_sha256": "b6630cb4eaadb290ed9fce01e423f6cbe7f151f3aab7c8ecc783b56620193ef5",
+      "mask_sha256": "380429cdde36957c0c29241957c7943c177103c4b45185e99940f46f6d048ac0"
+    },
+    {
+      "id": "ISIC_0000386",
+      "split": "development",
+      "image_sha256": "c9d6703f94e9e894285a044c70ccea3198fff451c723d762fd4a1930fc786f6a",
+      "mask_sha256": "5704337e9acccaaa974d58b02388db33c999b17efc343476d3cdc737f08961a7"
+    },
+    {
+      "id": "ISIC_0012415",
+      "split": "development",
+      "image_sha256": "affd03b9c680a5fdd57bcb2dd59c256c9c0e5bda244ac59068df6c0137f61099",
+      "mask_sha256": "27e21237b032daa46c10d92a0a147c14d9bbd8ab17eb39ae8ac8259fdabc663f"
+    },
+    {
+      "id": "ISIC_0000196",
+      "split": "development",
+      "image_sha256": "f98428a26dd4168fc1c65136735f9b45a4804226ee24bfda369813182a4bcd1b",
+      "mask_sha256": "ea29d038e56b3cafb031e47673ae1ebcfc7c5676dd9d3b4230baceb2b605edcb"
+    },
+    {
+      "id": "ISIC_0000112",
+      "split": "development",
+      "image_sha256": "b3fbea53ea5045029b25c022f32091cd222f1903ec05b98540c266ea269db369",
+      "mask_sha256": "8be118eddf76fb99ae8b30a65674e2a49f386dc489827e7d0e99bedecd3aa26e"
+    },
+    {
+      "id": "ISIC_0000403",
+      "split": "development",
+      "image_sha256": "285effa6f4911b5eab733f4b63d803d54c1f0e6a79a70df2084aa5f4e25219fb",
+      "mask_sha256": "c833508218a51db3eaec4cc90437e5f98ca816b8758974ba2cc94c8913c6be31"
+    },
+    {
+      "id": "ISIC_0000390",
+      "split": "development",
+      "image_sha256": "146d303e85c9d122e0e9520cfa319d218fc3f596f2a9eb61459c9d6a0b308b37",
+      "mask_sha256": "0c69ce1cd3be41a1f0892dd5e33488fd9563eb572651589ee57b54f05b0e097b"
+    },
+    {
+      "id": "ISIC_0010606",
+      "split": "development",
+      "image_sha256": "62eec2498f7077ae265d1701bd17defe9abec027fd8088f506b83354ec75891f",
+      "mask_sha256": "8efc2c8b2a8a51cd725b357c056e66ec39fbed3676df90e97520bf692f354e83"
+    },
+    {
+      "id": "ISIC_0008280",
+      "split": "development",
+      "image_sha256": "5c0d2ddc1c3c9eb0fb1786a344f1fa4892788d16b2a307d5debe85ba60224e00",
+      "mask_sha256": "562be0d184f90bf1dddf7524d2a28b0c0767953391dedf7dff454ab8996fb11f"
+    },
+    {
+      "id": "ISIC_0013257",
+      "split": "evaluation",
+      "image_sha256": "75eceea5cc906eb20e7dfb91d20199221f18910906cfb5a8dc7afe08a4ca9371",
+      "mask_sha256": "697cf7f109f051b20ebb03c421537e0ce3669f4105b362cab2e399aa8a64b0f1"
+    },
+    {
+      "id": "ISIC_0013052",
+      "split": "evaluation",
+      "image_sha256": "367daf00e8fa16a10a3db7f28b6d82758ebf0c3b914da443ad223be1b1ac7d8b",
+      "mask_sha256": "2c174abcd11fd075506a44aa6c5c8dd51d005d3392b25fe5d5952304f1f6ab6a"
+    },
+    {
+      "id": "ISIC_0001449",
+      "split": "evaluation",
+      "image_sha256": "ac56f76055959149b98c25857c90584f6f1dd7f00ac3633d689c0386449a69d3",
+      "mask_sha256": "2a97841b98a902ff495760d21c3e375abef587d6a7479eed2b73066f298b265e"
+    },
+    {
+      "id": "ISIC_0014324",
+      "split": "evaluation",
+      "image_sha256": "e0d596c64b562ab4fdc38ddfa27974c73ec5370d1e59d701422d55b937e48133",
+      "mask_sha256": "a6d5aaddb1cbf2323bf3ac95d1dd45ad440f889703cc54a367edd251d960addc"
+    },
+    {
+      "id": "ISIC_0015967",
+      "split": "evaluation",
+      "image_sha256": "5a2851ebdcf8fc8eaf6e3033a2000765f07f0bcc6cb961ce24e6aff4775f5e6d",
+      "mask_sha256": "0cf2d8a4f98d288948d6febfc80620c984e677bba9b894e694095368abea1d7f"
+    },
+    {
+      "id": "ISIC_0012693",
+      "split": "evaluation",
+      "image_sha256": "88f7c01068cf78aa5e6f5c912a391332db333b84771e12b69075e3c1ea2a0829",
+      "mask_sha256": "33fd1d12a71aff8688685713c73f1118c8d575f01d95531b7c06bb97e2744335"
+    },
+    {
+      "id": "ISIC_0000217",
+      "split": "evaluation",
+      "image_sha256": "474520bb2fbb22c4ecd17ef98758f8b590230eaced5f9c0e89e07658aeb46915",
+      "mask_sha256": "862d8a896d6066ab16abc81df2624ce656f9bdc39d3c5bbd2bd48e8d585fb98d"
+    },
+    {
+      "id": "ISIC_0015963",
+      "split": "evaluation",
+      "image_sha256": "446dfd5077c4c927a3055741e4378de21613968d5f51da0b793cf818fc34bcf4",
+      "mask_sha256": "db8cd6fdac303515eacaea623e852ffb0cf09ed815ff743baa2de7a90c081f6d"
+    },
+    {
+      "id": "ISIC_0015273",
+      "split": "evaluation",
+      "image_sha256": "594a43cddbae5a0fa40f03c82e98a35dc8cebca22f90c6bbf9588d23371f6c33",
+      "mask_sha256": "b99e37082fdc5d0884ab423becb375b4384a0398e87b8480d8e0f60068d6afe9"
+    },
+    {
+      "id": "ISIC_0000035",
+      "split": "evaluation",
+      "image_sha256": "0f0d9005e1e535c17f87958c99fd79db50d06cb18e2cb80d47822dabae0e5096",
+      "mask_sha256": "d110531849cf10b947baa582ef535bd869ea79687e61936ac054299da4f3e2e4"
+    },
+    {
+      "id": "ISIC_0000383",
+      "split": "evaluation",
+      "image_sha256": "5f5a95eddf1e3b7819f95e5471df8c38f2eba9e5c9d0a39c1e80394b7a644052",
+      "mask_sha256": "fa3317159d77b57bc89aa1b38f1dfaa0883a52496be1b7457ec4018f8ed04cf6"
+    },
+    {
+      "id": "ISIC_0000184",
+      "split": "evaluation",
+      "image_sha256": "b33e5466b5086805e79e20c042431193dffed072d2ef4c7cbe90998a598416e6",
+      "mask_sha256": "b2565034171867308e3811d7167ef8e5a6e861e2c25537946fa5946bc163e76c"
+    },
+    {
+      "id": "ISIC_0013843",
+      "split": "evaluation",
+      "image_sha256": "21eac394d38f6d6748ed0306974737475941395050f765cc5effd347758c9c25",
+      "mask_sha256": "b1ba920f2249f5fb564c371e767c24bc0c5bb36cc2788a6cb7a1f61d4599f267"
+    },
+    {
+      "id": "ISIC_0015057",
+      "split": "evaluation",
+      "image_sha256": "fd1fea5412f973784250a4da5c085274a6596201cfe423475be0ff9b399d0b9e",
+      "mask_sha256": "99477d8ddb314d77f0ca2cac4b0347059767ea5f6e58762837fd21c89b9f6d62"
+    },
+    {
+      "id": "ISIC_0013277",
+      "split": "evaluation",
+      "image_sha256": "429cdde3805965e773483633bc16858265b3b5d47dd53784c785f9bd0d16d5f9",
+      "mask_sha256": "a4ef36f1c90dbfb48a650b4a7056f044ad6a88fb813910af0a70f390adca473a"
+    },
+    {
+      "id": "ISIC_0013311",
+      "split": "evaluation",
+      "image_sha256": "4897adfe214cd73d349d60acc304be2fd7507ea58a72d7012f7e9c78d934c898",
+      "mask_sha256": "4fc88832a18e04bdd4b686864c6189482a751380d5646e91489912a3488baedd"
+    },
+    {
+      "id": "ISIC_0009252",
+      "split": "evaluation",
+      "image_sha256": "525a87d025f565cf39e8b3918e06bcfa976a1e613ffd588ce5356f41a4424ee5",
+      "mask_sha256": "b6aa411b1817d760a0ecf6f210368ba3925ef73e5651d2639cec47b3f56b6605"
+    },
+    {
+      "id": "ISIC_0014600",
+      "split": "evaluation",
+      "image_sha256": "735327e36a4d42252970b3780c2552a891d473c1612ff899d66779a7d3e0498f",
+      "mask_sha256": "1f9861d9809f288f4927c07bf6cd37705d338b06514adf1677a93dd34fd7d4f4"
+    },
+    {
+      "id": "ISIC_0010382",
+      "split": "evaluation",
+      "image_sha256": "0571d19d6945b06ef846b73807eeb1b68159c165b782bf958544f5bb34c27519",
+      "mask_sha256": "1a856bfc6cc3de5b2ecbf1bbda39c941e7d5c69e42032b92ad192828dc65ad34"
+    },
+    {
+      "id": "ISIC_0008659",
+      "split": "evaluation",
+      "image_sha256": "b15ad1727b708f5db4c636c91c189481f5a14ff44c9e068ded22a7e9536fa9ef",
+      "mask_sha256": "6d3224920057f000d2e580b7a4df17085f6e792bdf23ca849de4b33639e7083f"
+    },
+    {
+      "id": "ISIC_0009998",
+      "split": "evaluation",
+      "image_sha256": "326079c39c3c228197d7af2a7d7a1d075e650174527cc5c9643ae5af5ec9ce9b",
+      "mask_sha256": "327762d7053ab16f5cf2f6cf288ff478eda6b4c411a6678e71b389f977bb3f7b"
+    },
+    {
+      "id": "ISIC_0012223",
+      "split": "evaluation",
+      "image_sha256": "227b8b6fd865a1225321dbd39bb05c6c3f8a888b4f8a85432add6e517df577f7",
+      "mask_sha256": "e4fd8fead47542fc7db74b78db060737b61c9ccf3a41a4248140af091b8ecd76"
+    },
+    {
+      "id": "ISIC_0000523",
+      "split": "evaluation",
+      "image_sha256": "e629568f977dfaa9de3e2d65d20dbc78b20ce76d2535f21b7aec62ac7cdae8a8",
+      "mask_sha256": "57a2b5b0c82854a7ab2e4dbdda4750782dfd261c520f41cbb167f354b6ca7a7c"
+    },
+    {
+      "id": "ISIC_0012134",
+      "split": "evaluation",
+      "image_sha256": "30a5c6a3d13fc1b2c503fd1a232107955c10bbdc91dfefb3ca986ee90329e756",
+      "mask_sha256": "0d59fcf32743588bce672ead7ed436f10c589b971ff7b4d75f5c448910e00101"
+    },
+    {
+      "id": "ISIC_0009920",
+      "split": "evaluation",
+      "image_sha256": "432e7cbc366db16cb322746e7fd86aff4f075ca1ef7dc1a9dcfddcbc042ed9b0",
+      "mask_sha256": "5a9119ad352e59b22cbd884b55c8c86516ee82bd249a22a4117a86df9b35fc51"
+    },
+    {
+      "id": "ISIC_0000337",
+      "split": "evaluation",
+      "image_sha256": "45d5bd29bd1f24adb7e480b2e371d6b3a54e94053b610aee3b1f73b15bbc72dc",
+      "mask_sha256": "a372df9aabb36896a3a849197c8f2b6aadef071997946128000c743298c33deb"
+    },
+    {
+      "id": "ISIC_0016063",
+      "split": "evaluation",
+      "image_sha256": "b87a1f49de47ec32002cbcab77529bfc4affac08a3d64e683e5f3bcadf6d764b",
+      "mask_sha256": "63bc2cd92bdafcc11acdcd3a194d9336729efc8dff38e23ae38b8c3e9cc4f3b2"
+    },
+    {
+      "id": "ISIC_0000451",
+      "split": "evaluation",
+      "image_sha256": "a89ada433222c427dd12ff6c439d1d6399f2120b14e080a19862a22c9eb824d7",
+      "mask_sha256": "9e4ecfb2e0c24b8e764589706a57a2b3631362a55c03e8bf0c95433058ad67f3"
+    },
+    {
+      "id": "ISIC_0010232",
+      "split": "evaluation",
+      "image_sha256": "44617c3fa2337e7c164b25f7e6d3e46f41063f2e0bf6a9f017e481f66cdd6d65",
+      "mask_sha256": "a58c80d643479ea0a9b6ec15237793753e0950e24ca754f9f1b7a70a204f6ec7"
+    },
+    {
+      "id": "ISIC_0000336",
+      "split": "evaluation",
+      "image_sha256": "c3b91a4c248ccfe218e5eb4dc6d7e5bd17b25b60a5fbce6243386c1d8587f8c7",
+      "mask_sha256": "94deecedfa2a8fe7dd7db23cc96eb93866a16f29a187e414ac95d45449011809"
+    },
+    {
+      "id": "ISIC_0015078",
+      "split": "evaluation",
+      "image_sha256": "94f5382cc6d9a0238a6c0ae1e9ed20279a515fabcf745522da3af3091a1055cf",
+      "mask_sha256": "dee0e61e2a5facde66662d869e44800db156f6aa59345db1b269d76c7d0965be"
+    },
+    {
+      "id": "ISIC_0014336",
+      "split": "evaluation",
+      "image_sha256": "51cbac70ac7b16ed5a2f67ae3882be91792d316ceb0c8f2068148332dbcde0f0",
+      "mask_sha256": "6c7f9cf0e8131d60d7ab8032f6a9f634a6c10fc8e48a6ad212c42d3b48a3a1dc"
+    },
+    {
+      "id": "ISIC_0012332",
+      "split": "evaluation",
+      "image_sha256": "4d713bc3fb665f78e7775092815e1c07baed34194c4db46ee5ee67986ef582fe",
+      "mask_sha256": "119a6eb8a8e53416f4d285bb589b5af401e73acfc409b4d881907f59b01b7476"
+    },
+    {
+      "id": "ISIC_0011210",
+      "split": "evaluation",
+      "image_sha256": "c54e1e54c14842f099c5315e843da0ec93d3d46ab71819336b1d864a58550a18",
+      "mask_sha256": "8e9a146479c4469470422758a0db66f19fd23c399960d8a722a3e0561e7ef8fb"
+    },
+    {
+      "id": "ISIC_0014132",
+      "split": "evaluation",
+      "image_sha256": "ae8f0f9ffb62776fac65a4135053f5c0650311778f82730dd005ba80e5e78bcc",
+      "mask_sha256": "2c200a8246ddc79156f4f715a3dd7f5dc81ade4a41cccb88458f1dc402e379a8"
+    },
+    {
+      "id": "ISIC_0001185",
+      "split": "evaluation",
+      "image_sha256": "7764c9ae21023b6281a735fc319884e1693945a0c824748f0827997e98a75833",
+      "mask_sha256": "880a6fb562771b4670929f7222955ece52b276f6752a2ee4c7d3bd60a770e2ef"
+    },
+    {
+      "id": "ISIC_0013425",
+      "split": "evaluation",
+      "image_sha256": "7f7293fb254841bc07a878ffaa5b68e7d4d46a1d43e5b13fda2bc90032b90b14",
+      "mask_sha256": "95d54664dc538b8c69838f217856b33fdadc61ec6492d3947e85f979fda8eff7"
+    },
+    {
+      "id": "ISIC_0010318",
+      "split": "evaluation",
+      "image_sha256": "4df41d3ab615ad81626d0e34deb92c6817d79d1c5e3cc201e4395d8698ea40da",
+      "mask_sha256": "68d427fcfcf4b3dc032bf7f5bfab5c93697ca5cf52ad7529c44ea33bb62d9856"
+    },
+    {
+      "id": "ISIC_0000190",
+      "split": "evaluation",
+      "image_sha256": "ca9a11c8abc2d1303f207d1308ac77b3954b5ba0abfc89a699a2cd4e0039a672",
+      "mask_sha256": "0349efc3f1ac847d9a8271fb3a15a1ff77c298358b5a94cd77853adc08208f47"
+    },
+    {
+      "id": "ISIC_0015363",
+      "split": "evaluation",
+      "image_sha256": "8e59f473702bad633b8567b61bf529ca7e1347c7ad51da1c8be34ef7caa64478",
+      "mask_sha256": "82c75eace1c3aabe8e5d2769a6db93070974276509f5158dba061d59509e0446"
+    },
+    {
+      "id": "ISIC_0014933",
+      "split": "evaluation",
+      "image_sha256": "b278b48b69221f2e5071baac6e0f7f5c5003a5e10ec313c6adf28206af4cfbc3",
+      "mask_sha256": "8a11f1810a7ca520e37bd035dab69be035eae2a5ff7a9d393624e5324a1fa175"
+    },
+    {
+      "id": "ISIC_0008029",
+      "split": "evaluation",
+      "image_sha256": "d65acad8743bee7cde2afcc6f8b2ef81754f84b73e591192e7915e81a6e654ce",
+      "mask_sha256": "c7f55ca3407dab8f5edcc3b425a9d9f57a76e16e2a03ceb6c4e807b295f689c9"
+    },
+    {
+      "id": "ISIC_0000156",
+      "split": "evaluation",
+      "image_sha256": "0635ee6b6b5167ba614a985a6c6f9d0a6bd4bccc349d4972af282d94b6b4b45b",
+      "mask_sha256": "7eb911144540539cf77a04960da60daa50d605d7ac51d564bd64af82e4c402f2"
+    },
+    {
+      "id": "ISIC_0000456",
+      "split": "evaluation",
+      "image_sha256": "90c0af6e815fe69bbd32255a3638ef067b7b3e8e0c80f6b7f06326605459e8f2",
+      "mask_sha256": "15333029a53904620c209425c2b9c9e90449f314662abd4382a32655b4b06afa"
+    },
+    {
+      "id": "ISIC_0012653",
+      "split": "evaluation",
+      "image_sha256": "868edddda7649febf7cb7535d529d505a47b1172cd7072c80e9fdb760db671c8",
+      "mask_sha256": "da7e3055a4de6b992f8b0fc4dde1bba7b756498708b01fb700d08bfbc9229354"
+    },
+    {
+      "id": "ISIC_0015962",
+      "split": "evaluation",
+      "image_sha256": "c0ae679be3f9a2bf9be7e7ad31071096f29f176443970dcdc4391d740000d48f",
+      "mask_sha256": "4fe2c6b73a137a50570583edfbab8bcccba84799fdc875161c25edda4a7eefdc"
+    },
+    {
+      "id": "ISIC_0010361",
+      "split": "evaluation",
+      "image_sha256": "271272c225f7f6324dde4564544a882d81b586cb52be89f3ac774a799fd6acfb",
+      "mask_sha256": "294dcc63b42246964b6429fb8a1c7608a067ede485fde4bf7ccc43f2fb7b6fd6"
+    },
+    {
+      "id": "ISIC_0012744",
+      "split": "evaluation",
+      "image_sha256": "06b362e68f3c4ca594b12aaa7951a0eea02c28abb4905bebefa4ca8cb462b449",
+      "mask_sha256": "6d08cbdeb2b07cd2d4567efd9204c86c94eff05b70917137ec40d15e50f059fc"
+    },
+    {
+      "id": "ISIC_0012547",
+      "split": "evaluation",
+      "image_sha256": "93f4bc9df1a05a8eab3125d943eeb7a8eedc31c4f72f098dbcd1e7df93f97c96",
+      "mask_sha256": "5232c3010e4f73292d868f663df4f9cc3e9601217ac6010d80e80f7e45c2c02d"
+    },
+    {
+      "id": "ISIC_0006671",
+      "split": "evaluation",
+      "image_sha256": "7bb1f5466347adf9022c70c3d4fae06ce53081133500c5fe95e4d071302c0b1a",
+      "mask_sha256": "15ba79e7dab923cbe27103700abdd667fb308bf83f0ef4c0c842cd149a378f48"
+    },
+    {
+      "id": "ISIC_0010089",
+      "split": "evaluation",
+      "image_sha256": "c0ed6da498e2a94387e6a4c2bd571991dcc9f7d9fb41185a08729effcb67fad7",
+      "mask_sha256": "a227117640c443cb28d0be81c1d4f19a36bec0f2c710cd0b2a61ba02bbcab86e"
+    },
+    {
+      "id": "ISIC_0012250",
+      "split": "evaluation",
+      "image_sha256": "3120c7212f7fa1e8b7e2c87b5380169baea881a93486495807f66a791a7900e0",
+      "mask_sha256": "e0fc63127070f0d6e80feba24184140d81f1df0c40d430fa4f35d106ff2ebbc3"
+    },
+    {
+      "id": "ISIC_0013226",
+      "split": "evaluation",
+      "image_sha256": "cd5dca4a6e887e2d240086165e9a193f225f6ff88d1c92f2359984a1923a729a",
+      "mask_sha256": "1c9dc5b432dd9d2920a35eac02fdb4c25680c1a534939566efb28ca9a5e3e054"
+    },
+    {
+      "id": "ISIC_0010844",
+      "split": "evaluation",
+      "image_sha256": "d2f4b380157855e298fc2971e2c1c244e43ff0f8db5212f72ae3a78833c76f53",
+      "mask_sha256": "f675de61407ea501f144d955f83b5ca7295bf5ef1bdd98cb6b31b3d8c5cc025f"
+    },
+    {
+      "id": "ISIC_0009915",
+      "split": "evaluation",
+      "image_sha256": "d11519dce501aa8e61ec2da99bf385a9240e235f224ba83bb31583142df8e1b2",
+      "mask_sha256": "615d84ac6e1f3ae0b126a1c4dc69a262c63bf217bedce7a4c83bc819eb0f4d5e"
+    },
+    {
+      "id": "ISIC_0000519",
+      "split": "evaluation",
+      "image_sha256": "6ddf43b7d189cb4b647fc1a5ce57a043c86db907d77bd92a0271843fc9ca2403",
+      "mask_sha256": "d4bc023765e38dac7fa201073a8e2647344b8f0856f7ec4fff9c2abab3efd1ee"
+    },
+    {
+      "id": "ISIC_0012489",
+      "split": "evaluation",
+      "image_sha256": "0f44ec9a839453edb54e1a03fa65b385348bf113bf8dcf142bd57bbf6e196cfb",
+      "mask_sha256": "b44e696d22372ea6cc7a40c0d54b2ae18f27038beddde9b519af88a87d159278"
+    },
+    {
+      "id": "ISIC_0006350",
+      "split": "evaluation",
+      "image_sha256": "b163d679715f9d2353133f8f512c7fe3bd3e63771b7cec73e7de45834da58696",
+      "mask_sha256": "5017f33db38914281a7c516d1fce3c68a7e89f9dfa474223e171dac0a331bd38"
+    },
+    {
+      "id": "ISIC_0014586",
+      "split": "evaluation",
+      "image_sha256": "70030c9b5f262d4cb1254f66f10fe7d4d0fa8deb3dd26759c7c44dfa18b42d6e",
+      "mask_sha256": "bdfac9905c88f786124313a52da45c14aba678395f2ad98563afeb9704e0587f"
+    },
+    {
+      "id": "ISIC_0007475",
+      "split": "evaluation",
+      "image_sha256": "e4afeb25bafde883f298bcbc412b1c0ebe5da2174c3fb1f50e7346c232d6fb23",
+      "mask_sha256": "386064802a9a199ef902a28e7737b4b9c04acd28dd9ad86c28b161a86012b0f3"
+    },
+    {
+      "id": "ISIC_0013321",
+      "split": "evaluation",
+      "image_sha256": "18150bd87ca4a1f768302dc1c719f442b10d8211a1148d7844da380400ca7bfa",
+      "mask_sha256": "efaf7c778e79cf986003d727cd980e322fc863a0d2ad456f4088d966a8109678"
+    },
+    {
+      "id": "ISIC_0015193",
+      "split": "evaluation",
+      "image_sha256": "c958ba1fe5d09ffcf52105b9f7c3420a892a404ad1a480b1884852ce526aed93",
+      "mask_sha256": "ca22003afa59d5242fbe4f45b2678807098c48c216c08bd9ddd26b07171b24e5"
+    },
+    {
+      "id": "ISIC_0010350",
+      "split": "evaluation",
+      "image_sha256": "63671f8a017678cdbf189e0a38af76ad409e4ac43e694b0aa70ab64ca2aa548b",
+      "mask_sha256": "e619cf845a52ed9320e7263df3fbbc31a75cc0d34f001d38fa415f5608c95dd3"
+    },
+    {
+      "id": "ISIC_0015015",
+      "split": "evaluation",
+      "image_sha256": "9f1f7a43bf4688485cc4b4a2870884d81f31bc0688610cd8e6e402f8707163b9",
+      "mask_sha256": "4d29672cf022e4e5204d03a1eb524803f09dbb54adfd7ae24a24b3b2dffe0835"
+    },
+    {
+      "id": "ISIC_0000556",
+      "split": "evaluation",
+      "image_sha256": "9680672b79cfeac81b9c18354df1d8b3e4f7423cde412c020c2e3d82e30252c6",
+      "mask_sha256": "ee6685e0723368148ef3781655a9f9213148102ae8ff5fb752ccd67325ebc03d"
+    },
+    {
+      "id": "ISIC_0013817",
+      "split": "evaluation",
+      "image_sha256": "57e6ce413732d56f2ff4ff67b895c3de472d8fa862888ccc116326a622ca372d",
+      "mask_sha256": "7eb235f516e7f8f202994a18da926b4a4cfe42f6af197833a434b6a123522642"
+    },
+    {
+      "id": "ISIC_0015011",
+      "split": "evaluation",
+      "image_sha256": "7e93612cb3f44f9d690f1af285c6c4868ef4e3cd021c9a3e2d7347e15475b533",
+      "mask_sha256": "e84de31e1609feb8ceeb41d91497726f5fd32d32e69b1d13e9a262fc4bfc021a"
+    },
+    {
+      "id": "ISIC_0009977",
+      "split": "evaluation",
+      "image_sha256": "7d7b4890d053aea98110a9cc84acd0cc2721f7172f45a2211f4fd76ddec131f7",
+      "mask_sha256": "395ab118aaf839dd85aed0332c655f4b1bcfd407a0ef3ffc9ea31abe9bd2e9a2"
+    },
+    {
+      "id": "ISIC_0012871",
+      "split": "evaluation",
+      "image_sha256": "3ac086b279216f72cc0c24b502ae41dfce5c3e1f6ae93376a3430727fe8651dc",
+      "mask_sha256": "f1d1c79b1cfdf4f7f609abc4d7fccda937a0a9f1ce9a9828d9ee5bd82aa2daa9"
+    },
+    {
+      "id": "ISIC_0014849",
+      "split": "evaluation",
+      "image_sha256": "e54cb9a4e31e0bbc81ed5b4e400a783397d100f801ff591cd64bdd1fa2101511",
+      "mask_sha256": "a72ae5e29a9778b68433bea2e261b34785c1217867d1665003491852a9eae9b0"
+    },
+    {
+      "id": "ISIC_0000086",
+      "split": "evaluation",
+      "image_sha256": "d37fe4b581ce714fa0ab1064cb46a2ce9072f2d5da12d9183b7f5f8e73855b98",
+      "mask_sha256": "21a516c08263c9d7f88ef1013909127412367d50e6743f90e12f58d9c1ff502b"
+    },
+    {
+      "id": "ISIC_0012381",
+      "split": "evaluation",
+      "image_sha256": "77de12623f5167abf5626b8464d57649a782b2678d5fb4c3241b2766acc05d13",
+      "mask_sha256": "169860d91059e54ea20b492385b60629d0b14ddd1bfa2a83da3d6bd36e0d444f"
+    },
+    {
+      "id": "ISIC_0000274",
+      "split": "evaluation",
+      "image_sha256": "18f65e15bb38af1de921f73e5a8bafb5202e996406ba3f0e525bbc18c4b453c3",
+      "mask_sha256": "4917d21db91fe648c8e45648e3d28126a58852d2a227553d90f89aedb719dc52"
+    },
+    {
+      "id": "ISIC_0009945",
+      "split": "evaluation",
+      "image_sha256": "2173814727e81f085d4f26fb0b1441b0c82bed9fa64e2b0c6407e2f1419f6464",
+      "mask_sha256": "e4d09b1b6d8bd4e5ee8907ec0f91cd066d927cda914e445bde8d030e3d39de0e"
+    },
+    {
+      "id": "ISIC_0000259",
+      "split": "evaluation",
+      "image_sha256": "56447a0e0e9539a0c378d209d6ff7c702cb2fd9940066f48c23b785eb250f07f",
+      "mask_sha256": "e5c1d3a49f2c8c4679b7657dbf0ce45da9ce0b599feaa3b30e6ecb6e7884d527"
+    },
+    {
+      "id": "ISIC_0012713",
+      "split": "evaluation",
+      "image_sha256": "6f7ee0e29e12ba8ddf02de8bace287033ac47a22e9f462c684c58ef62d15d889",
+      "mask_sha256": "90bb70d679c7f60f063be2c8eb219abb02031458c57e840b303c4e07e385f217"
+    },
+    {
+      "id": "ISIC_0016030",
+      "split": "evaluation",
+      "image_sha256": "c4f43d40cb65f873c6f316b26312b167a2bcdf2f9744b75887fbd8a10df2a7ee",
+      "mask_sha256": "f4deade54801fa791bee79d48cac7d0c14fae3c3cbbb0ff6a9d08cd77a69edec"
+    },
+    {
+      "id": "ISIC_0015482",
+      "split": "evaluation",
+      "image_sha256": "374a1174d4cb461fc58cce94a9c986c548f44361cacc191df6cc6a890ea65263",
+      "mask_sha256": "b92b2da05428a2316c511437257e93325709179a3bd9b2132efb4fc3359b2e20"
+    },
+    {
+      "id": "ISIC_0000268",
+      "split": "evaluation",
+      "image_sha256": "e2e0693e82722f5a37a42faf8a0f3f74427dc8f2ba98b5ed743df4498af4dabd",
+      "mask_sha256": "5e3613e210ea8c27ee532412fcbbf61f6072cec4508872e0a1bfb0ce246a94ce"
+    },
+    {
+      "id": "ISIC_0010220",
+      "split": "evaluation",
+      "image_sha256": "6b3454910aac2fcd4681351b728ab0c190087acc649e5bc5b350b659d11e6a76",
+      "mask_sha256": "0044168a821485bcacc6a6084d20cf35e85541d13c858c8831fa8a0f755f4d90"
+    },
+    {
+      "id": "ISIC_0014929",
+      "split": "evaluation",
+      "image_sha256": "adaacf53974e1c1bfd3f91f6166c3e6ab42aea1f89e01cce112cc79dad9cf2ca",
+      "mask_sha256": "2621f1a1b8b83d9e8df8934ea6c945600d53f23a47e5cc024f0abb81978af138"
+    },
+    {
+      "id": "ISIC_0014219",
+      "split": "evaluation",
+      "image_sha256": "75ffe4b183ddea5ce3dc270aa37289462e1b8a0414f94d6c3ffbfb46a5bae26f",
+      "mask_sha256": "fea0e4008a7726358f5e794d0e4ae46343b8b00d8c330531a674011596f531ef"
+    },
+    {
+      "id": "ISIC_0012177",
+      "split": "evaluation",
+      "image_sha256": "f1feec55321a4dcd73e4401cd9dbc4fc64178fe34b066b7a92bdcd1114c7f959",
+      "mask_sha256": "e1101a8cb5bea8603596663ff51b9061efa33e8bb0aef5eed177b64a1f357e36"
+    },
+    {
+      "id": "ISIC_0013517",
+      "split": "evaluation",
+      "image_sha256": "70733911b2fb16dfd859a837666a324311f04bd5f9ee302f426391825a90bab0",
+      "mask_sha256": "02c5fe14a284c4e9e04ad199deb9bdc0b05959bcd643911ce6410c4dba992a96"
+    },
+    {
+      "id": "ISIC_0010187",
+      "split": "evaluation",
+      "image_sha256": "c1e50fe7ba11f58ad04a420fa6a39ee9ce5a3a8f35610f72157a360632965f14",
+      "mask_sha256": "97b584fe90914fdb1616534e3dc5fc36f669b45457acf13f0a39fc866707545b"
+    },
+    {
+      "id": "ISIC_0013082",
+      "split": "evaluation",
+      "image_sha256": "580c9eea845cdbdfc8343ba817757c0a9e397a91f61a995468c20d90cdea0f20",
+      "mask_sha256": "07f22132612863eec9ba30beba81a5a790009f9c08af0299abf5e66599aea097"
+    },
+    {
+      "id": "ISIC_0014253",
+      "split": "evaluation",
+      "image_sha256": "4471b400140235f0d313e0fd6a567ffb4c32aba7f6d05dcd690013b2dc500e33",
+      "mask_sha256": "4e638656ad54e942ee23198edb55354980a0fdeb5d4d19dae7e6c54235cc7b50"
+    },
+    {
+      "id": "ISIC_0000352",
+      "split": "evaluation",
+      "image_sha256": "ac150f5727d2210964e95f4f8ce8e0f34281cc405a9b84903436eab8f907d0ed",
+      "mask_sha256": "e18eb06eed6a6b0906c4fdc6525b13846a5cbe152e4287c22d1fff94cd42e3a7"
+    },
+    {
+      "id": "ISIC_0000384",
+      "split": "evaluation",
+      "image_sha256": "c47d4d183674504d941a57b9c90f5df4f25627cd042e456bebf7f345d780a91c",
+      "mask_sha256": "abcc1ba5a636d5c151ef87dd32a240501660c201a9fcb796b3577f85f7ab1d8c"
+    },
+    {
+      "id": "ISIC_0011297",
+      "split": "evaluation",
+      "image_sha256": "cfd8ea5f16ed290f302abf0a7fa515f7daf127359db37dada7e904aa19309a32",
+      "mask_sha256": "c9789bd1bef1d9bbe6e4c3a54a48bc9e764e8378e2a5d2de535644e530d4e23f"
+    },
+    {
+      "id": "ISIC_0000181",
+      "split": "evaluation",
+      "image_sha256": "654c3241ae9981835c2fe2f0dda20cee0cab39f0d059ab3690b252b9fa37b2d2",
+      "mask_sha256": "bde61081a1456301e3915a7da7ad1fd3a931fd342caa70140dfc4cd0a925c86e"
+    },
+    {
+      "id": "ISIC_0016038",
+      "split": "evaluation",
+      "image_sha256": "ca12da6ba11d5a2666b0cd011ca2a2740b3dcc92a19a4d9a151d842f38273eb0",
+      "mask_sha256": "7fef04cd6fb0dad2f1d76d8140a25b116787e7da56821083a45e27741c4a11dc"
+    },
+    {
+      "id": "ISIC_0010060",
+      "split": "evaluation",
+      "image_sha256": "334c4498bac9e23ac48e8e1405149dbb59d5fb9ab094cb78dbbcd6343870762b",
+      "mask_sha256": "b403ef51ad4aa06eb485d62106838b48ab5a84425e8466400b11f25b5f2f73cb"
+    },
+    {
+      "id": "ISIC_0010370",
+      "split": "evaluation",
+      "image_sha256": "762b4e25f3b850f1706d092d8907181035cb469bf02ee0f35088c0a0621318a2",
+      "mask_sha256": "61cf0c294c81f00be676a3cea69098d7b642bfa762e803d0951ffe5940800f1c"
+    },
+    {
+      "id": "ISIC_0015158",
+      "split": "evaluation",
+      "image_sha256": "e400bb91cef2c68fb61d588f6bfd1bcbc2ed894e9fb4030cd74953a241e62069",
+      "mask_sha256": "16c2df942cfe1f711bdbd1199bd28e8915cff664b7c28339f1aec3adde4bc0b2"
+    },
+    {
+      "id": "ISIC_0015353",
+      "split": "evaluation",
+      "image_sha256": "7e69fbe78a309c96d2bcd2cf675137dac2b3d54d057a5c187d645d7178c6f2b5",
+      "mask_sha256": "d0c20b8e04ffb8e16313b06e80618a0fbfff504156b02d10483195dd2aebfa59"
+    },
+    {
+      "id": "ISIC_0015152",
+      "split": "evaluation",
+      "image_sha256": "7b4157cb3f62ff044e264efad628d518947e6f97b4fd994ffa4516c210dc388b",
+      "mask_sha256": "7fd0223f545aa23879a7ccb12b6c6fbdf76a52240644b11b6441c8bc03c5f163"
+    },
+    {
+      "id": "ISIC_0013911",
+      "split": "evaluation",
+      "image_sha256": "24ddf4fb97d045071670e804f04bcfe4ca073d0fd5e9a01a983c481c01c4f093",
+      "mask_sha256": "96e6dfcc3dbf873b0a796ba3d52566f6ed82340e1472a31d73649b7051ee8ef9"
+    },
+    {
+      "id": "ISIC_0000339",
+      "split": "evaluation",
+      "image_sha256": "da86d1da75d1a0e3fa12605fe41697520a0e9a206b8d82869dad75cc5d7c8f8d",
+      "mask_sha256": "ef69ce3689829d6f410f5c5dff9b8eaea7d5934e387f5cf0a74e3b5d2b63d4f6"
+    },
+    {
+      "id": "ISIC_0014814",
+      "split": "evaluation",
+      "image_sha256": "bef37e9d545495e322a9f66f90ac132aab499b855f49f2df6318c251ff263647",
+      "mask_sha256": "bdcbd92c9280edb9b4b85003de4d189f0ab2532b7919bb8ae46171477be3b416"
+    },
+    {
+      "id": "ISIC_0014863",
+      "split": "evaluation",
+      "image_sha256": "30a0c201e7a1523da15df3500e5679ea2c5b8981f1372bdc8260ebdb5a0e7585",
+      "mask_sha256": "05a236934c6a224a16d7d3f0bd4eec9121b39b6059e77e7b1350972eef5e53bc"
+    },
+    {
+      "id": "ISIC_0016029",
+      "split": "evaluation",
+      "image_sha256": "4d51145762d58fb4a696918b97135dae44e54f68c159c517db2fe6d91bef31af",
+      "mask_sha256": "5503bec412c03b4ce75fe570617abf9ef639b3419db9027f13077b09ccb4717d"
+    },
+    {
+      "id": "ISIC_0015404",
+      "split": "evaluation",
+      "image_sha256": "825ddb107a5d4bad840c7af8d4b3f2f2e1a0953fcf55abb1587fa0a2a47f6d48",
+      "mask_sha256": "df0b5194681df6ee0a94b7f1569ab3ae885dfc128862d0868986ef79e37cd94d"
+    },
+    {
+      "id": "ISIC_0014441",
+      "split": "evaluation",
+      "image_sha256": "c7dc0e0d1f1bf82d11e451b765fbd3ad079ddb906044eade603fa8d7f9c75e4d",
+      "mask_sha256": "822b62a43edb1daa8152386667e8b66931f636fa6c42b8c16d3110b2a5dddd4b"
+    },
+    {
+      "id": "ISIC_0014546",
+      "split": "evaluation",
+      "image_sha256": "67ceb68cbd0949bb279af064a99973dd55f9e43f61a34c9819aae4babb3d361a",
+      "mask_sha256": "aa0c532431df12c3a5dd99edf4090b4c5cf7a1f6f288ddcd04cb0f605492b930"
+    },
+    {
+      "id": "ISIC_0011300",
+      "split": "evaluation",
+      "image_sha256": "1de0ba5b7aa5602858281d929cba292b63584f957e49f2e0899bb873e7702dc5",
+      "mask_sha256": "e636872b4152abd9171e9f0b20d99a8d2761736a65b27899e641766731d2354a"
+    },
+    {
+      "id": "ISIC_0013089",
+      "split": "evaluation",
+      "image_sha256": "aa507ae77c81cbaa0b1f62239583deb2cd279c6d564e57dd81a5321291cc1d80",
+      "mask_sha256": "3b58932f7ef72383f77d8cc5b8e856346b17d2cce663050cdd9f58394f66fbeb"
+    },
+    {
+      "id": "ISIC_0013599",
+      "split": "evaluation",
+      "image_sha256": "dccce647e1ba67bdeab58406f3ddd3e7b5820afd38877498b4dd9c98e2107adc",
+      "mask_sha256": "62a5a9aa12e520b7b2ee7586d603a6721be916816764d6b4441bfadfb171ce19"
+    },
+    {
+      "id": "ISIC_0000392",
+      "split": "evaluation",
+      "image_sha256": "e7402e64d18ab92775012e24a65db4bd388e36bd0dfc8c0f41579c0b62ba13a5",
+      "mask_sha256": "3e15340cfa02f67d5f50aa7c6244675a9d22c27d303ce70e59fea5740cb3a812"
+    },
+    {
+      "id": "ISIC_0000360",
+      "split": "evaluation",
+      "image_sha256": "a36fa4bfb401a8c2d2c00f1129ea63fc1efebfc657798e8ca8993866ba4ca8c9",
+      "mask_sha256": "adc5924f4e1b1f2468ace647a5150e742f8895bd210ae2fcc560072c8d4d2df6"
+    },
+    {
+      "id": "ISIC_0015946",
+      "split": "evaluation",
+      "image_sha256": "7f364404f562a07bdbae34e7539ca48c1253cce6a1d14e9dd02af1dda41b89b5",
+      "mask_sha256": "19d45af3f820f598efe8757a0bed600736a0f57ccecc97b420dea43bce2e47ae"
+    },
+    {
+      "id": "ISIC_0010568",
+      "split": "evaluation",
+      "image_sha256": "541b725606bc9e946ff64e9a969a74995359d4b15fa73f5e92d9040c148522c8",
+      "mask_sha256": "f486d3a11e460bfe546a64283124f4df5e2994213568134e295e7197dd7f6761"
+    },
+    {
+      "id": "ISIC_0010590",
+      "split": "evaluation",
+      "image_sha256": "efa9af3b51e8dad6c0a396318adffef640fccf6175417f6b17902ea42404561f",
+      "mask_sha256": "1f338fe7d930347e3e2cef47d3dfa1abf67ac1125c6cc1c3767ddf46b69e8b31"
+    },
+    {
+      "id": "ISIC_0012245",
+      "split": "evaluation",
+      "image_sha256": "7abefafead1921c690ea1b3fda7dacb5ae4b146f09d9402f3db2d8ea1864f341",
+      "mask_sha256": "6b72132b8ded5dc0998b1cc17f3381faf5c2a4821378709ebd76543ca9f8c817"
+    },
+    {
+      "id": "ISIC_0013023",
+      "split": "evaluation",
+      "image_sha256": "8e772ace9ff0e6a5d910fd1cb7a67044a162613c3407ad9deaa0be4eb35e2e78",
+      "mask_sha256": "dfe11d9c330cb168a1b810c8dc458cabf9840f7d2af671aad103816804a45f6b"
+    },
+    {
+      "id": "ISIC_0014081",
+      "split": "evaluation",
+      "image_sha256": "89abc2d58e6c6e244bc04f70fdd8a65469153651eb93538b6a922b1a2b03f598",
+      "mask_sha256": "a3c4ad40b373640d205a9f7cbb477167dc5f4bcf375ab3d5df31ceab3b048d5e"
+    },
+    {
+      "id": "ISIC_0013458",
+      "split": "evaluation",
+      "image_sha256": "ba45d7e46d469927c43be314d77b5bfe1a6844df41cf08487f3f7d4872a83830",
+      "mask_sha256": "04eff3c52c12232f81d5b6160064e1edc2d78f9576d3f4edf6f79e32d78e0c9a"
+    },
+    {
+      "id": "ISIC_0013433",
+      "split": "evaluation",
+      "image_sha256": "e884df5987825cd7d773e8a94af64400ab31d63cbe0cb14081839f2999ed51c6",
+      "mask_sha256": "50bd756548966404994639af1e16d24002026145b5af14059454d25b967515bc"
+    },
+    {
+      "id": "ISIC_0009976",
+      "split": "evaluation",
+      "image_sha256": "ef1053c3df31884714a8f0f68f16f8d4c383458b0f88485495eaf33a5c8830a7",
+      "mask_sha256": "7ccf97568cb670a667396ba17ee184c087b7caf6eba5ae331e79e43ee13d83c1"
+    },
+    {
+      "id": "ISIC_0010067",
+      "split": "evaluation",
+      "image_sha256": "54ea32b145774a962bf14da6072b1d5f28dd786374ef02de6e9b6e925a827ee0",
+      "mask_sha256": "095d1e048142d18796b1017351ecfa6ab708bfa95061e8a0babe987388ff5da4"
+    },
+    {
+      "id": "ISIC_0000117",
+      "split": "evaluation",
+      "image_sha256": "9a73f048c55502312fadde6b846fa6a4e98f865de4d8c3ceadd9c2ae91a227af",
+      "mask_sha256": "245ca27405149df90cbe0f5cb4aa478af13cdd3c32eeaa0600103b0e18f5a295"
+    },
+    {
+      "id": "ISIC_0000359",
+      "split": "evaluation",
+      "image_sha256": "2ca4c001d8f9b1ef15b5336e5a9958394fd2a438ce22674af9ff55759d2dad05",
+      "mask_sha256": "66a42e4be99c423cb17ee938ff35546d3f44e1933a0305f21d4d0a7f5b15ed60"
+    },
+    {
+      "id": "ISIC_0013719",
+      "split": "evaluation",
+      "image_sha256": "b21c5ecbf8c78633deef31f2c1926d85c7400d6340888b12a321d43715fdd616",
+      "mask_sha256": "597b55f0cb2b25b2552fb9ad5a756fe094d6185f2c460e67bc3f29af3d97cbd7"
+    },
+    {
+      "id": "ISIC_0015204",
+      "split": "evaluation",
+      "image_sha256": "48e86640cb1054b84e59d9c52e1ac5068bbbf32b0210bf204da5eaacb4fab550",
+      "mask_sha256": "59fe6dbb3cc139005a7c25a3f1969985a86aab9d7db1f690cda966369b6af104"
+    },
+    {
+      "id": "ISIC_0000036",
+      "split": "evaluation",
+      "image_sha256": "123f320d1313c2e7fefe920be633bee63ab32bfad5a3849ddaa0fef7ab18a283",
+      "mask_sha256": "a2e16d3473ff5b94eb6e369dadbe5a74034f942e96a02715b291041eaad4630c"
+    },
+    {
+      "id": "ISIC_0011123",
+      "split": "evaluation",
+      "image_sha256": "82b59e5ee154c9081855a97bc1a92a46a583813d5e41520b9b53863f20225c37",
+      "mask_sha256": "58c23d09f92a4aaf6da1d9031051a4f57ea1ff5dab2c8ced3117575ac0147ff3"
+    },
+    {
+      "id": "ISIC_0016054",
+      "split": "evaluation",
+      "image_sha256": "f8594ac326db9de609bbaab5556c2b4083c02f7de5cb8c32ed5c076c0d6f2452",
+      "mask_sha256": "b3b0daadfd69a4e3625021fd9a1f360b74673fca264c333ede7efa95da21982c"
+    },
+    {
+      "id": "ISIC_0014703",
+      "split": "evaluation",
+      "image_sha256": "f1b863ca85453c41da769e4547c0a7e92ef8b9097959ecd653a9908086f0580e",
+      "mask_sha256": "b1ca719fed0325734e412d95d21c8c13fc2442a1a126a2f36a1e0d8701625f36"
+    },
+    {
+      "id": "ISIC_0010177",
+      "split": "evaluation",
+      "image_sha256": "6b6da5286afa448f440a257fcfbfd297a9535a78252b0145dba7c0a51bc97996",
+      "mask_sha256": "5f82e6026dec1615ea698448da99cbb4cddfb5fc7d58b3f15801d8d67a15fc96"
+    },
+    {
+      "id": "ISIC_0013124",
+      "split": "evaluation",
+      "image_sha256": "9579f6b444490dd85d4e35c3c43f465549d0f5b4abfd2e3a36554afd2631ba40",
+      "mask_sha256": "c505f55928f6ed099f9c85cf881f5b31f3490efc11e6521ac870b1710e8bb29e"
+    },
+    {
+      "id": "ISIC_0007332",
+      "split": "evaluation",
+      "image_sha256": "6c3eb13828c5cfe04ee1c1c41be010791b2bfe6859cc5c602cb4324201fc6280",
+      "mask_sha256": "6a3929f282cfb4b0bd0bf0c4b4c15cb212a113cd729aa4cd769d7b00d759de23"
+    },
+    {
+      "id": "ISIC_0000166",
+      "split": "evaluation",
+      "image_sha256": "d3e38c6790c5dc7c91d2371e972de07e12d8784aa44a220b8e331d657a555dc7",
+      "mask_sha256": "04f72767d3c9bb6b7274ad05a2980199b5796bdb2b8f5735f8c21cfbb8831efb"
+    },
+    {
+      "id": "ISIC_0011341",
+      "split": "evaluation",
+      "image_sha256": "52221b7eeb052a858526a8fdff7ef6cd4ff38f10151e66dd2b7342afe5377329",
+      "mask_sha256": "eb4f91017abcc7b90707ccbdde804c44786df39a991764a7bafdd62de1d3b82e"
+    },
+    {
+      "id": "ISIC_0010226",
+      "split": "evaluation",
+      "image_sha256": "7cbec17afbf16b8662f3f33808b3dbf88fdf2ecdb7673d15a4f758a9bce37641",
+      "mask_sha256": "81f83e72930e2dd6325b1412c671769fbd52f435fce45d482736a68776e1f9fe"
+    },
+    {
+      "id": "ISIC_0013430",
+      "split": "evaluation",
+      "image_sha256": "ef3b08a69070c7db9d68f01578bf635fdb749006f90a156bf720a12991b0ff46",
+      "mask_sha256": "c5eed6b86860664627032d37fa2da6c9c79637d6caec03cb072745a920589960"
+    },
+    {
+      "id": "ISIC_0006800",
+      "split": "evaluation",
+      "image_sha256": "e3aeea1e6dfe025db2bb053bee56905ae57c4c5aaf87144a1297275213e0930e",
+      "mask_sha256": "bb2433b521d71f1581256954052afb5f62fc85e68011e3aecfdc21475be69178"
+    },
+    {
+      "id": "ISIC_0000213",
+      "split": "evaluation",
+      "image_sha256": "d666e50078569084e21ec334d14ea8575e160f783342fc58d8dbc1a319a9f2b4",
+      "mask_sha256": "b48cb40ef385606c6e0615c7eb9f4cf6d88acc2a2013c140e0b9fb5932d193a2"
+    },
+    {
+      "id": "ISIC_0013073",
+      "split": "evaluation",
+      "image_sha256": "1147e95e063d418a165ab215511c8358a20f294a0e365c2ec9182ccf6f0859f0",
+      "mask_sha256": "2adfe7c066e73b704f84432029c6bd6aa49b59b39687d821b78e4af035d423a3"
+    },
+    {
+      "id": "ISIC_0013193",
+      "split": "evaluation",
+      "image_sha256": "31b8f5e95dd067708d7b8c27952dc55b994bf9260e71af3869eee971f1ed0a61",
+      "mask_sha256": "ab51bb7ad4c4b9307165e7bb68f8ce5668a76c6670e309172c01980a12d7276e"
+    },
+    {
+      "id": "ISIC_0016051",
+      "split": "evaluation",
+      "image_sha256": "31a032e1ba52b497e5287a321c2a7a13e70591bb7cd2135305cc2d0e14d51407",
+      "mask_sha256": "3747bb33575da250ba470042a33b06ed9ab5bbc73a13fc2bbae1fff8ca3426cd"
+    },
+    {
+      "id": "ISIC_0000187",
+      "split": "evaluation",
+      "image_sha256": "35c1b798cec4a4d7567db257a67661083361217a12c4ec5fd30e9d44d2f4d8a2",
+      "mask_sha256": "a9c3922e2f93b43bc1db2716220ffc06fb0ac2b88b894eabba472b6068b0236b"
+    },
+    {
+      "id": "ISIC_0010263",
+      "split": "evaluation",
+      "image_sha256": "d7d3b27d79de5d3447ad5bfa6a2d85799ed5a2ec8af88217ec77270dc3cc7189",
+      "mask_sha256": "320ca6ad240b5fff8c497df5b8b9c0e9cc1567c35585874d650d9e5bf7ea4048"
+    },
+    {
+      "id": "ISIC_0012092",
+      "split": "evaluation",
+      "image_sha256": "08e2d319d164aad07e401e4d0ce03b647b7ac9fcb6cdab029c11605f639577fb",
+      "mask_sha256": "d68375de648f3c770fe8c293a05eb076334c5f57738879d42f70c5b15d2c80b1"
+    },
+    {
+      "id": "ISIC_0000125",
+      "split": "evaluation",
+      "image_sha256": "780f36a840f2a6264557ace5c98462b03859f71a7088288b6f90ba5fd258f357",
+      "mask_sha256": "3fac4665d2eb949daa380e66a1cb3906b314ee71cb898432ec37b6b3be59f798"
+    },
+    {
+      "id": "ISIC_0013643",
+      "split": "evaluation",
+      "image_sha256": "8db01a8715ed3cb3fa600de83b692d73900c4e85eb84956f7226cf2030a13899",
+      "mask_sha256": "5c7d89e3efd29ebf88ab102f2944cbd5262c71a8920af4bce4b8d0e618243463"
+    },
+    {
+      "id": "ISIC_0014908",
+      "split": "evaluation",
+      "image_sha256": "e126102be95e2af766224b510a85fe2a6fb18166c0659ad1cdb8014af67b1241",
+      "mask_sha256": "760d4cd95b48fb6925573c5fd4c4d92bed96d504a83fa6fc65d040bf8f28e292"
+    },
+    {
+      "id": "ISIC_0014013",
+      "split": "evaluation",
+      "image_sha256": "2bb47ad3874010471189e17a1037c2ae4936ba2b0b1f527f60d8cd51eab0647d",
+      "mask_sha256": "4b3b6c513fab3e31642b5122c3d035710f7ae68d9e1a1900adb36cb454162df0"
+    },
+    {
+      "id": "ISIC_0010186",
+      "split": "evaluation",
+      "image_sha256": "afd5a56e4d07d430961de354addffcec2be68d39e5090d6d2869500559f69ace",
+      "mask_sha256": "195c096c9b0d9fc51a5b674bb8a6213b0595b72ba1cea84b03eaedb415b2f50e"
+    },
+    {
+      "id": "ISIC_0009895",
+      "split": "evaluation",
+      "image_sha256": "2c77cc1b8f357b697b5adea6424898d179d8f40fdc1bb516a35b5c8c290e75af",
+      "mask_sha256": "54216a8ec9b247f2b45bb867430e04a1d3cf066d6c7b7172004af244cbb90eaf"
+    },
+    {
+      "id": "ISIC_0012679",
+      "split": "evaluation",
+      "image_sha256": "3b0e5f7f0e998983bc6d583a2dbbbfcf1ad94538bf1e04a3684bcb99a6273c94",
+      "mask_sha256": "b0adf59741bcef6cfa87cee54dbdeaad247f59e0adca627ab315fe028118a53e"
+    },
+    {
+      "id": "ISIC_0000473",
+      "split": "evaluation",
+      "image_sha256": "af9ba2065e9886d77441808a886d07e515e99d86d3073d0688133428c347e7f4",
+      "mask_sha256": "eebfe400654241f0887bf2eb346a7a78ab92f1f71888aa8893e684c9cd91c5a0"
+    },
+    {
+      "id": "ISIC_0010603",
+      "split": "evaluation",
+      "image_sha256": "27697d5a548c10ba57c25bd6bff3f588088a09966c8e1679005d9cb0bf6ed065",
+      "mask_sha256": "b6d5413fbee26d6e118e7518aca1e66af2bf4996626439aee555049a42caadfe"
+    },
+    {
+      "id": "ISIC_0012212",
+      "split": "evaluation",
+      "image_sha256": "79fd193a6bff9d2f48ea779646514d329836688968c467599b76dfc2315889c0",
+      "mask_sha256": "a13273dfc439d431e6d45c1032b38efed9b088f846654d1882ee2ac856f4470f"
+    },
+    {
+      "id": "ISIC_0010036",
+      "split": "evaluation",
+      "image_sha256": "03e63e09fad576f7fc543a21dff896fa01ab4b6326c587ac2870fb1683146696",
+      "mask_sha256": "7e1fb75437cf9dde313cc34e0217948f2e52d364a4a0802b5e04563b29bfe825"
+    },
+    {
+      "id": "ISIC_0014707",
+      "split": "evaluation",
+      "image_sha256": "76b561d3cdf3a25e7279f425c6c2bcfb0fa313a641aaa7b195d7ecff01d832d8",
+      "mask_sha256": "f70ce716ee073bb0de1e56e6f128fa39c4b773206591488ddc64841e618773b2"
+    },
+    {
+      "id": "ISIC_0013197",
+      "split": "evaluation",
+      "image_sha256": "f7c976b647935e54ee1d58e51ce4fee68f9b9225cd332834e46d0753a49e1a2c",
+      "mask_sha256": "7ccddd41e2aa6aed299831b5a01afa61c71fdae992f44c4453077a7b714792e7"
+    },
+    {
+      "id": "ISIC_0013427",
+      "split": "evaluation",
+      "image_sha256": "38f39cc0586d24063c36a1f5bc2fe914b418c6220b82c19b08e525ad579f3bf6",
+      "mask_sha256": "a5ddb80a3f4f8e14c6c0248001821111c463798a9d94b714902b01a8b942e925"
+    },
+    {
+      "id": "ISIC_0014739",
+      "split": "evaluation",
+      "image_sha256": "a3f5aa0cc74355a61133f895e7fc843467db4303810e9f40b6c6874c21220f4a",
+      "mask_sha256": "9c75abff839a98cda3fb711efbaac2bd0949ff28a86130745ec49d7007ad783d"
+    },
+    {
+      "id": "ISIC_0014632",
+      "split": "evaluation",
+      "image_sha256": "9fbf160893307fcc41390d11fdc4a857e2cd7c1860695f62b4d456af74bb42d8",
+      "mask_sha256": "8607b31541182455f1b553b1585aa691ab489553700d54925f5f135d47021904"
+    },
+    {
+      "id": "ISIC_0009921",
+      "split": "evaluation",
+      "image_sha256": "c67b1e712dc3f7c50850f61bb82fbb3cf3fd11ec884c3667b28b411388fbc0c9",
+      "mask_sha256": "a01a9583cc9dcf90a2a094ee65f58baedf864d8323eecc075a1d5de012a9816d"
+    },
+    {
+      "id": "ISIC_0010565",
+      "split": "evaluation",
+      "image_sha256": "57ffe6369f91f20d4be0603c3507853ceff7a496db6ba0135b3a11e851b133b7",
+      "mask_sha256": "bd12e1a18b6ea6725f59d585e6af269d537a23db2ca9558c7100fd5713326082"
+    },
+    {
+      "id": "ISIC_0013495",
+      "split": "evaluation",
+      "image_sha256": "843eac94f4fc459468ea606952f74ee7f9a4786b2113736111335c5ed944db2e",
+      "mask_sha256": "17c931f58d2dd8789c213de4a5a38564ab5cc270ccd13fbc9b32e6411518e41e"
+    },
+    {
+      "id": "ISIC_0000281",
+      "split": "evaluation",
+      "image_sha256": "ba7a0b389c10fd38345643947f084fe6020f2c254d7973682b8a202db6552d8c",
+      "mask_sha256": "544d0b8f4243669a3fefbaa8b426b7a9a62bd0222752254fca377b273d9297d0"
+    },
+    {
+      "id": "ISIC_0014628",
+      "split": "evaluation",
+      "image_sha256": "9408f1dbba651a994859022b4a34e63dde1de71350e0753f55c97fac88628d95",
+      "mask_sha256": "5bbb7fbd6608ef015f9111f2a73c72b07decbd74cdee4eaf7856b4c5c825e1a4"
+    },
+    {
+      "id": "ISIC_0013809",
+      "split": "evaluation",
+      "image_sha256": "e4073b1e4144ca4d1cd282ea8385f056931649ec0e33bfbb4e34104b7f2281c6",
+      "mask_sha256": "8da02d476910e4d1cc992790aba3b30c7fe68d3b7866feda29465aef3c5f482b"
+    },
+    {
+      "id": "ISIC_0013828",
+      "split": "evaluation",
+      "image_sha256": "ea326f6b67de7952fe2dbcbea71c0ef4a8b4c157d2c2dac7c618b3086fb229a1",
+      "mask_sha256": "b217fde8e7f3db84e2b9bcd067735ff6436ba60fbbe7498098b1601a96f12a34"
+    },
+    {
+      "id": "ISIC_0012704",
+      "split": "evaluation",
+      "image_sha256": "d55f976bef09c98668cc4a88c53b6191bf2f33df59493ee253c214c37fdaebd2",
+      "mask_sha256": "6e2c31e9e38173f7d6a36cbf0be0c49a44615056dd61931feb120e150248ff3c"
+    },
+    {
+      "id": "ISIC_0009928",
+      "split": "evaluation",
+      "image_sha256": "387988824a96a556bd251316b54b31a4fee468b3de389ec416a7d2561bf27d02",
+      "mask_sha256": "35dad31866ea450367b066231a0039e4c52c38938a426524237f139459c4bd03"
+    },
+    {
+      "id": "ISIC_0016061",
+      "split": "evaluation",
+      "image_sha256": "14576d194671f25c01ef7fc08171894ecdb8fa8f38a796a094bff7ed53589432",
+      "mask_sha256": "67889012a546a5a377dc442093a6d3c1afb070468a682c9bd8578edb2c1c5c21"
+    },
+    {
+      "id": "ISIC_0009860",
+      "split": "evaluation",
+      "image_sha256": "5c55a4435e9fef140c2dc697b90fa290502279e6e5e4d7aaa9646b4054487b78",
+      "mask_sha256": "6e7e69358e2a76a2f2569fffa09f265d63426b69b0e8e0c714d8ce220a0c4441"
+    },
+    {
+      "id": "ISIC_0000439",
+      "split": "evaluation",
+      "image_sha256": "983772970ff6a3b2427e69da37eac598dffa9488d597386018a41b0688384c48",
+      "mask_sha256": "911b9f40f9110c393e6f1b7e907ffcbc1e7ef465ae545de81e908b55b669fc5a"
+    },
+    {
+      "id": "ISIC_0000460",
+      "split": "evaluation",
+      "image_sha256": "b1066c0d2a16a48aa9fc6130284186acfd897b4fe2152f335056545c43983f34",
+      "mask_sha256": "64e0a6b4a5a4290e96d17a867a1b368534f94409c9990a10e5403b250bba45d1"
+    },
+    {
+      "id": "ISIC_0013792",
+      "split": "evaluation",
+      "image_sha256": "1bb528f882391f31e828d82f0b2877e23489ce4ff45b575d44a246530344f2a8",
+      "mask_sha256": "f613305868768230e06c4bfefc56faba2a393907b96430707c3a88e914e14af4"
+    },
+    {
+      "id": "ISIC_0012298",
+      "split": "evaluation",
+      "image_sha256": "e4a1e778a0aed34a77d1524fd3e53dd3ff088e40c9699eb9d62fd9d702a755cd",
+      "mask_sha256": "0bee92c541b0dd0475429c00f7079dc447e891305c30ad8fcdd5fa0438306eed"
+    },
+    {
+      "id": "ISIC_0010000",
+      "split": "evaluation",
+      "image_sha256": "45a12e39438b3b7ddf24462d43d1fdfdecae27cd0a3b1a4ed495f7551d366b8f",
+      "mask_sha256": "e98cc2843a4949277f6b07b90564671034e3d669597e48e7d312a38ebadf90da"
+    },
+    {
+      "id": "ISIC_0015064",
+      "split": "evaluation",
+      "image_sha256": "2a61f1afd453a442971a640d74c6d7c7328f79384f9747c281e577b2278a3a08",
+      "mask_sha256": "a00ea91d484b511344431acc9c77bff6e41c8c0e6c08b4fcf86c87606697bc43"
+    },
+    {
+      "id": "ISIC_0016069",
+      "split": "evaluation",
+      "image_sha256": "13a8a85ac23a5dedf2e4b1480d31e98020ad5dfffb0d65dd66cb398fc6354851",
+      "mask_sha256": "7a2656eea012101524f5d0390101ce3d71b5504cb66ab6411086648f2a043af8"
+    },
+    {
+      "id": "ISIC_0003462",
+      "split": "evaluation",
+      "image_sha256": "ebdf93e9b1e3305ab524e8ef45bd55076a602ca743c5ce23287f05ac0bd3c59a",
+      "mask_sha256": "be3766829a4c023402b968fe67b050773378907dedbcdeb2169bac052c1e3638"
+    },
+    {
+      "id": "ISIC_0013438",
+      "split": "evaluation",
+      "image_sha256": "6f43594c702ba736ddf77013fc3f035581aff0288513478c90ef549f2cb94003",
+      "mask_sha256": "c53b7889c40c2f7ac380b8ac1ab420b3d5b65660fbcea8be2ef9534b4dec3b76"
+    },
+    {
+      "id": "ISIC_0010595",
+      "split": "evaluation",
+      "image_sha256": "e68ae3a08a2f9ffbffba5564ceb203ae6840066e36207a5c7b643b7f9b32a3fd",
+      "mask_sha256": "f49a681bf524731f620c28ec33de455df77a85ac2c3d461852f87cbf5518d09d"
+    },
+    {
+      "id": "ISIC_0014815",
+      "split": "evaluation",
+      "image_sha256": "474072cbdb94da809a31bdc394c700b19bdf4f1de18b8a77b2fd9a5a99d34aa1",
+      "mask_sha256": "df5ea3eaec862a0a828043d7e2d379b2b68d1d8b1af1932a0dd33b2f0fa8b976"
+    },
+    {
+      "id": "ISIC_0012484",
+      "split": "evaluation",
+      "image_sha256": "5290a694a0a2d249972dcd2f3e418d3a590fe8a12cbd9f73212e8e0c0724b842",
+      "mask_sha256": "ac0fa63ced65e4475189254d9111c6e1eef7d8d4178dbcbb2d437db5737bd0e1"
+    },
+    {
+      "id": "ISIC_0010006",
+      "split": "evaluation",
+      "image_sha256": "8a85ad99683d770ad088cb444ca0321a69d20536441bc76455e941bf80ac080f",
+      "mask_sha256": "779ff6ae00aed99bbf51959f5745cc9a1a4356879d5027df05acbba6edb4785b"
+    },
+    {
+      "id": "ISIC_0014149",
+      "split": "evaluation",
+      "image_sha256": "a94601aa1886690a61bde6ce72ed7a27392c644c7f642358cbff33e4ca29a9e4",
+      "mask_sha256": "e6b2598f4319b4eee5f00213c889b681da65400e043a067cd1c2dd0dbe4d407b"
+    },
+    {
+      "id": "ISIC_0014868",
+      "split": "evaluation",
+      "image_sha256": "cc0b811329b19be937726ca4bb9a9ad321ffab417463abaa6a8309ce274deb28",
+      "mask_sha256": "35ea5528135384416fb53942f09627bb16ea35a47d3edc40e114d60db3f7d306"
+    },
+    {
+      "id": "ISIC_0000442",
+      "split": "evaluation",
+      "image_sha256": "775ebfca5e8fc82414d79593bb177791f5004d6fdee635afdbd0a910f5a3f158",
+      "mask_sha256": "7edd76960faae5e8fd7dc2472e0a3ee51101a357b9cfa596e0e35bb19dd43981"
+    },
+    {
+      "id": "ISIC_0014066",
+      "split": "evaluation",
+      "image_sha256": "599473cbd82aa621602e04c731ae7ce1e232c300428b13056d52a23cd036c109",
+      "mask_sha256": "bb644fc4a52e8faa08ea01bc391bddd774ef9216163460ec8ab008251e672525"
+    },
+    {
+      "id": "ISIC_0010102",
+      "split": "evaluation",
+      "image_sha256": "4f550c483db0819448cad46c32194ed4fea3bf897c7ae783fa1fb8af3ad7f237",
+      "mask_sha256": "192010c33fd3be3174a9740f09b3de1d8b11c6a4c5bca17049f1dfe1eff77236"
+    },
+    {
+      "id": "ISIC_0010853",
+      "split": "evaluation",
+      "image_sha256": "a719123ccaaa16e6dbc0f27d610896b1fb50dfd758268962e4042214ea7450ca",
+      "mask_sha256": "e767aabf518c15d33f373fdb136e18c3ff8425a40f65bd7039c2f9ee582cf9a7"
+    },
+    {
+      "id": "ISIC_0012988",
+      "split": "evaluation",
+      "image_sha256": "c6fd0d4487b2aebda62214dfb92c3fd957125048cd3f5220f4d5acf57723875b",
+      "mask_sha256": "1ace3c6415d3d08884a47d3747b0c5965631815971448f7d8849d43ee60b5777"
+    },
+    {
+      "id": "ISIC_0014543",
+      "split": "evaluation",
+      "image_sha256": "14cdf24106a706f260ac9ee301ea9a21d468b6740589a0d2290020ac3b79c1c8",
+      "mask_sha256": "caa41a623852ec08e9042c9736ec3f10997006f8a3e554c0619b791df9a5728d"
+    },
+    {
+      "id": "ISIC_0000147",
+      "split": "evaluation",
+      "image_sha256": "4cdd6c15a033760ae4110d3cc9e51479395dde0609a42790237f328aef749a57",
+      "mask_sha256": "6d42550e3d5227aab7953729475e2f2a2cc5aea010f8cc26cf23145293a1a31d"
+    },
+    {
+      "id": "ISIC_0000426",
+      "split": "evaluation",
+      "image_sha256": "72663488158f74ed46537e9488fb96ddd7f26fcf136667f8aa4667d32016e78e",
+      "mask_sha256": "85699fde69de8a9d50f4c04149ffb11f8e45c357e148f2fba628592f83abf21c"
+    },
+    {
+      "id": "ISIC_0002476",
+      "split": "evaluation",
+      "image_sha256": "48834ad28a4e51697b7b0fec7978ca5666b54ae51e1dd7148fe244ed3d2ed640",
+      "mask_sha256": "413134b9c8996862c1d1bdebf33ec0d10a3f9dc372cbde65c5a8619ac3b27573"
+    },
+    {
+      "id": "ISIC_0011150",
+      "split": "evaluation",
+      "image_sha256": "f37713c08c5002826af202bcee4a7991d60fb011bfe9e2184d3fbcc21bccd635",
+      "mask_sha256": "7bec351342295fe36e009cce3c5cea7a300f9211f498bc426e6ad2f47af16c3b"
+    },
+    {
+      "id": "ISIC_0011112",
+      "split": "evaluation",
+      "image_sha256": "d47f5ba6fb4c74d69d22c5c9f1fcf25e04f6b3208de4596811637661532f109e",
+      "mask_sha256": "9bd295b9c78fe5dd4d849fc52ff9872d383ef2e432bee73d986581b003395bfb"
+    },
+    {
+      "id": "ISIC_0000511",
+      "split": "evaluation",
+      "image_sha256": "21923a738a01c3c1e21c90738deb3a56845629ff9e056d8970c1bdfd0ea1857d",
+      "mask_sha256": "5befb6701d27b565ea814a02b5b1f708b566ee11c81295e0f9c749a8fb29c3e6"
+    },
+    {
+      "id": "ISIC_0015638",
+      "split": "evaluation",
+      "image_sha256": "61b265e1f1f75cf38c1275d09e843bc70a5f2f7aafcba001ca6fd244f0954416",
+      "mask_sha256": "e9cfa9dac0ef286bb28e4b5078c06dd3543976e16b719018e2652b4cb6edadb0"
+    },
+    {
+      "id": "ISIC_0001960",
+      "split": "evaluation",
+      "image_sha256": "e33fe8281a6a30d5c3fe24e007bb64647eed19a70fe31ad5c5e7cc872059fe75",
+      "mask_sha256": "7011be92ce8c3c3df96e1234254b2a0b5bc8577fe6727b61ad6824ec615aeb44"
+    },
+    {
+      "id": "ISIC_0009035",
+      "split": "evaluation",
+      "image_sha256": "6f520d9034accb2e341240c742b8cba74227d918357541c0ae38d1ab900da6f7",
+      "mask_sha256": "d502819d5af05fe901391e133cc9ed7510032ea06778d78c8865c28ffc33d35b"
+    },
+    {
+      "id": "ISIC_0011095",
+      "split": "evaluation",
+      "image_sha256": "7ba92a439698fbde0b5f2e20ba2a6e25b8691b48c2d425d904a92c277f35033c",
+      "mask_sha256": "05d775122a9772a85a8e4d7cc03f649980ea2161fadf2f012ecf2e17a497e29c"
+    },
+    {
+      "id": "ISIC_0000269",
+      "split": "evaluation",
+      "image_sha256": "43a29c803861051e0064cf35afdb4a09a0a1b42f155850023c1330d71c57c441",
+      "mask_sha256": "e84b3fbe1932aeb0f0fc82eda2d845364beffa3ec7b2a9f7a927dde025b6df7e"
+    },
+    {
+      "id": "ISIC_0012260",
+      "split": "evaluation",
+      "image_sha256": "37829559f323b2659d9c9ee84eca5ff8dab36635b28114efb5d7c515a2e430a2",
+      "mask_sha256": "02f4e6c5fcd0620011098849311aedc6030bff9acc2c24f027d89ec2785c58de"
+    },
+    {
+      "id": "ISIC_0013568",
+      "split": "evaluation",
+      "image_sha256": "42cffcf5132ac82b291e72f44ea294a0b864c09895fd8a0193c88ded51e033a5",
+      "mask_sha256": "9e06c4645b92aa8016014df297d9215cd3fde05d00751f481041e993c6ba9757"
+    },
+    {
+      "id": "ISIC_0000382",
+      "split": "evaluation",
+      "image_sha256": "547e17899ea4eee1292eacb4d3776df8d33c9963a376e4c4cafc281da2e970c2",
+      "mask_sha256": "b0fb90cc477b9127cfa802c757374b3c5e05503a8659ee32caf8671d43d95043"
+    },
+    {
+      "id": "ISIC_0015997",
+      "split": "evaluation",
+      "image_sha256": "eed71e0192488a15e7048ca7e02daaaf396b4fa812c40a37d39f161b73b4d7ea",
+      "mask_sha256": "304a0711dc0a3f767218d299dd0b16b9e0f5014b95bd4cbca4b8da50cfba5def"
+    },
+    {
+      "id": "ISIC_0009962",
+      "split": "evaluation",
+      "image_sha256": "5cc840473aeac993d2d9145b44a478d76378fd1f9af452b3870c2c32bb2ad700",
+      "mask_sha256": "bd37c0d48d38c7d4e6ed2a9c95300ccf854c603f91a91e6b989219e051b81d34"
+    },
+    {
+      "id": "ISIC_0000343",
+      "split": "evaluation",
+      "image_sha256": "de0572c8a82bcd2a7de6cae089e8e3a2a986e9072c6668cf69b03a364d14724d",
+      "mask_sha256": "f3ba769858bc5d8c3b0dcd36a78f03b54f742d68e67b8e639a11fe7d9e58c8d8"
+    },
+    {
+      "id": "ISIC_0001134",
+      "split": "evaluation",
+      "image_sha256": "3ca6b3f825cd05a6f7edfb797e9dcf90897c70b5f5ef3069330ba1c326d8ff98",
+      "mask_sha256": "12e24103f47e0eb6c29ad47851fea4a3d79f94be0a6b5eee19381de273185a1f"
+    },
+    {
+      "id": "ISIC_0015982",
+      "split": "evaluation",
+      "image_sha256": "92cf28bbcc765455efcb517b8432badd93b5c3d7eedb48765db916e4d3160b70",
+      "mask_sha256": "27904815eb76d79146a2e8d965d4e42641639e7df5ad5fbbf96b69af6b84cfcd"
+    },
+    {
+      "id": "ISIC_0012873",
+      "split": "evaluation",
+      "image_sha256": "00743b754558a821d1ce3b91dcfd83e83dfbf03440a0821a5aee44ab34512d25",
+      "mask_sha256": "b2022313d95e3690dbb2e2fb3e67949d461ff92dc63180753813fd7beee612b5"
+    },
+    {
+      "id": "ISIC_0000555",
+      "split": "evaluation",
+      "image_sha256": "bb23d54ee9762cb1ae0f8a3ae522821f9108535453f8c3dc93ca6c6f590df80b",
+      "mask_sha256": "af50b4a0450c991d58163ebd022eaa325dda120f494e69dd19ad6960acb3a6ee"
+    },
+    {
+      "id": "ISIC_0014834",
+      "split": "evaluation",
+      "image_sha256": "3c80bf9b788489683e9e0301992d8dc550562f433dd33caac32513176893eeb2",
+      "mask_sha256": "cb85174156de08eeed3ed82c94f810029148bf83debab3236383c15d51cc72d1"
+    },
+    {
+      "id": "ISIC_0012520",
+      "split": "evaluation",
+      "image_sha256": "e033bf82d7deb360289338074532e2c81fdaed3e531059a49202fdb9bfce2d2f",
+      "mask_sha256": "6b405388934678cad289d1b42f220c48d56442090b0885d82cc91eee48d41542"
+    },
+    {
+      "id": "ISIC_0014567",
+      "split": "evaluation",
+      "image_sha256": "94ca4f721babca9f550ee7afc84800cfd23d9522ea73de34c713dfcaa7b41a95",
+      "mask_sha256": "c60392a89f00ccf8a53359540bd51b843898510218c4ee3f86feedacfa7617f5"
+    },
+    {
+      "id": "ISIC_0015125",
+      "split": "evaluation",
+      "image_sha256": "d2a4fa84cbca059ed1e814f12d072c9720b06ffd9e40d9ead2a767e81e95b7b4",
+      "mask_sha256": "4d75a6a57189fe595ba1c23a6731510bf78dffd2403b03004e17861bdb9b7149"
+    },
+    {
+      "id": "ISIC_0012281",
+      "split": "evaluation",
+      "image_sha256": "de6e02a3eb0eb9f823f583eb13e67e809671502367c9c019e2eb413b78deadd0",
+      "mask_sha256": "2aaff376db76054d016a480999895301f69c9144814938ef55181767a60986a9"
+    },
+    {
+      "id": "ISIC_0000290",
+      "split": "evaluation",
+      "image_sha256": "92210c5b406d2b2b7118af98b7ea56b801aacfb4373aa412be97abc34dc7bdd0",
+      "mask_sha256": "868b925a03f238dcbfbf10a7a55539488e0fac3913fd0864cbac2ed9cfaad6b8"
+    },
+    {
+      "id": "ISIC_0010171",
+      "split": "evaluation",
+      "image_sha256": "350c65b4879b94b121fb27f3418adfcc3da092d36615f489218b4420bdbbd88a",
+      "mask_sha256": "6eb026b8f504b5b14210b0c45faa98543c9612380f484b3ac3834d7d7cc5649c"
+    },
+    {
+      "id": "ISIC_0013190",
+      "split": "evaluation",
+      "image_sha256": "a05d7c5d9a927ffbb58589e0709b136d82de01981abf5f69407c54b0a868dcff",
+      "mask_sha256": "1229bfde80e969366ec1213ae7281c35ba56754f7ce840121eae774c702c652e"
+    },
+    {
+      "id": "ISIC_0000882",
+      "split": "evaluation",
+      "image_sha256": "d79016a8dfac73f574510d1b2d6d483afac52c5dbd441e91e1c0988447735eaa",
+      "mask_sha256": "6da0e68fc0776d442f00cc406926f2c410f8abf748f117d1717fc4cdcccd39d9"
+    },
+    {
+      "id": "ISIC_0011109",
+      "split": "evaluation",
+      "image_sha256": "4dc6fd1da76018ccb344a869000b7b67d4f5502289fb08a55966d8829ca013a8",
+      "mask_sha256": "0f99b546735a9915c053eb327696e5eda6e531de43f703d7a5a4381a0ea7b6ca"
+    },
+    {
+      "id": "ISIC_0009918",
+      "split": "evaluation",
+      "image_sha256": "c0b969e7334c78e5650cfe173a709c8415dddbcd727ddf5d1ff2423e3245b6f1",
+      "mask_sha256": "82caab634c22887899e44a3f4465d7bcd9a57ff83e5f99dfee86569a2cc7faea"
+    },
+    {
+      "id": "ISIC_0010581",
+      "split": "evaluation",
+      "image_sha256": "54f6ce8c75bffeb073f512f8f583936bdb1947b2a37003ca68d8719c894db681",
+      "mask_sha256": "60e67a7489722ce803880b49300c9f8e65a24726232070a3dac1eda9350cee7b"
+    },
+    {
+      "id": "ISIC_0016060",
+      "split": "evaluation",
+      "image_sha256": "731d0ebec339970c470e118588a65f1959fb33b435ad1b1b8196d81c7c55b86b",
+      "mask_sha256": "26295dae6358b55b1b2c8e939c099965b4fcbece72fa3d7874e605b7e15c89e1"
+    },
+    {
+      "id": "ISIC_0015146",
+      "split": "evaluation",
+      "image_sha256": "1af0769629fee48b8cde01a6490e2cb86cab3612d8c8a64c8c1e4bc88e29310c",
+      "mask_sha256": "e65b038e04ba2156dade01dc8940442be7c9402f9bb8431894b6b70006e37de0"
+    },
+    {
+      "id": "ISIC_0000140",
+      "split": "evaluation",
+      "image_sha256": "afc2f33c755e289c2b901a68b630f6c7d0c1fe61e9fd2ffbaff1245e30333fe5",
+      "mask_sha256": "2c4ffb52cb27f36d3298f54c474fc2b4eca08dea3b4c520911acce48d758f3a3"
+    },
+    {
+      "id": "ISIC_0008116",
+      "split": "evaluation",
+      "image_sha256": "b23413c216f47e1773fc374b0a64e9d9e51277109bcbf524016ae00c133934c8",
+      "mask_sha256": "023b1631d5be11b6111f131c32284d956eac209706ffffae0c3f4661bfe36f68"
+    },
+    {
+      "id": "ISIC_0015276",
+      "split": "evaluation",
+      "image_sha256": "04844015f1533afced125c211e946adba5c4df682ea4ffd418f42956e66e32bf",
+      "mask_sha256": "effe87e7d1e6097cf80b21e1a1f824b04ed6b226d1136c9644cc8d667eee1657"
+    },
+    {
+      "id": "ISIC_0010222",
+      "split": "evaluation",
+      "image_sha256": "76357ca069cc9eee899442b3e60d79f6001f5fa9aecac0d90754b2427954d676",
+      "mask_sha256": "1c309c35e49a5fd70c7bea669297feac23a82061e1375cff19a2ddf7c4dc6a0f"
+    },
+    {
+      "id": "ISIC_0012278",
+      "split": "evaluation",
+      "image_sha256": "09c242fe3a0bb491736badd5634e8e0c447ac144785354533dd387205b44387d",
+      "mask_sha256": "98c851bf89e22df792e89b8f71646d801f034cfd161574376c794b1ad4509e71"
+    },
+    {
+      "id": "ISIC_0013178",
+      "split": "evaluation",
+      "image_sha256": "692108a0ac3cdd39bbbc8599f2a3f63c7470e5d0961b4064e60ae9cdfc8e19e1",
+      "mask_sha256": "4180cd7ba2f0c92359cbf80462dcb59fa57006c49eb7ae737b46012885b53c39"
+    },
+    {
+      "id": "ISIC_0015173",
+      "split": "evaluation",
+      "image_sha256": "f7356ac7278b4b1182efbfcc68ebb3bdfde8a0e42a2a3504905011c1bdcf8ede",
+      "mask_sha256": "6961c1bd33c4810582aed77f0c8a020215945297826a502dd04b83354f4d831d"
+    },
+    {
+      "id": "ISIC_0000170",
+      "split": "evaluation",
+      "image_sha256": "b4324326d9ec69b795a4a630118ef594d588e2ab4fa793cffbc62f72fbbf955d",
+      "mask_sha256": "2417383a9413cd4e868162309d3b292138a62d10dfa1cd79c7b2d5fe02b0a81b"
+    },
+    {
+      "id": "ISIC_0011114",
+      "split": "evaluation",
+      "image_sha256": "9771f4b92b286683b9a38978340f9a19b8446eb5354e250552c96eeac770a089",
+      "mask_sha256": "d21b68e43fca5f5507f25ede6e0ec3a908c59f60e77b2eb9c34a7de74071a70d"
+    },
+    {
+      "id": "ISIC_0010435",
+      "split": "evaluation",
+      "image_sha256": "149d081ab1f6a09b3f5899874abe42c5e6d5de9bfc614235402623109b686979",
+      "mask_sha256": "48924601bbaa72eefa9c38b2bdd6ea0eacb7598641ecbbef39abd0a716db54a5"
+    },
+    {
+      "id": "ISIC_0013696",
+      "split": "evaluation",
+      "image_sha256": "27675384389f7bd9029c0d2f80c7981a11f568bc7a4b76fee8924caf3749132d",
+      "mask_sha256": "c56a19b9df3a22426caa229918c1f48d26eff182418a6aff744b70ca77ed971d"
+    },
+    {
+      "id": "ISIC_0014431",
+      "split": "evaluation",
+      "image_sha256": "ab63a85f3abfb67f0038350893346ffdeb234ff10c8bee75199ed500ee536e81",
+      "mask_sha256": "1f0731e1dc0b7123f8f83c6429046c1b635e9727030b6df97aa516d6d9ebd677"
+    },
+    {
+      "id": "ISIC_0015127",
+      "split": "evaluation",
+      "image_sha256": "9fdc10e4dfdcf51ed56ca1075daf9bee2b253dcfb5ac52e0ae7b436a89bc3a0a",
+      "mask_sha256": "3ffa3f7a3aa8a48e36882b7ed1593e54e09bf10f268e5777abf010c9c4b3dcd4"
+    },
+    {
+      "id": "ISIC_0010249",
+      "split": "evaluation",
+      "image_sha256": "4327ae13f5628a5f7ed89936a814c4794b4fbf0f0e1f898d9ccfce14f5aa4491",
+      "mask_sha256": "61db96c770debdc0d4bc6ce6ba5289b2bbc83f00ba0f9369ea974c1a29a2827f"
+    },
+    {
+      "id": "ISIC_0013801",
+      "split": "evaluation",
+      "image_sha256": "c32f397cbbb10dec990b1fdf68437e18f7476b6a5dab4b0ab215b163c8d974ab",
+      "mask_sha256": "7187ba0c2103bb47231c9e905f53484b293f4ef5b1af005f8e25c0c9ee864859"
+    },
+    {
+      "id": "ISIC_0015355",
+      "split": "evaluation",
+      "image_sha256": "4665e3baedf66fd3cd1311589913ff5535ae7ee516dd841cce708ec862224c69",
+      "mask_sha256": "72a981a54b443843f306bf2e91dbbf7b97dd30e5c18f382788914387e62fa9ae"
+    },
+    {
+      "id": "ISIC_0000003",
+      "split": "evaluation",
+      "image_sha256": "e3092bd47d1955c117a18acb1e236222cae99acfbd393d0c7f07b4e6b8978857",
+      "mask_sha256": "d4cb3b9212f0da2934fecdecaeb40b963618f115277865555a0863c4427ae61c"
+    },
+    {
+      "id": "ISIC_0000370",
+      "split": "evaluation",
+      "image_sha256": "6c6dfc5687dffedff153d73efb75ce2cc6f2300c0fcb6346254d674f697c8b46",
+      "mask_sha256": "8f3876454d929b4e8f95e693031ccdc6fcab463a492ec235a5c9ca42f7f904aa"
+    },
+    {
+      "id": "ISIC_0013424",
+      "split": "evaluation",
+      "image_sha256": "1a9f25a7e544fa9e7fbfaa0e17b4f6006e8ca9f755075132d98ed5a71c5d3162",
+      "mask_sha256": "c74be3aa789c6609e3ed284ee478a33e4fc504d8db4dbb43d1c4063334576d06"
+    },
+    {
+      "id": "ISIC_0000069",
+      "split": "evaluation",
+      "image_sha256": "469cb7a1a7fd4135d676daad01d6dcf7dbe2db06eb7bacfb6b3a1677ba811ac1",
+      "mask_sha256": "de1044731eef5de2d5a29c13ad3cd80f16d00cdb6ce370b2a1ff9a2bfbc5c024"
+    },
+    {
+      "id": "ISIC_0004346",
+      "split": "evaluation",
+      "image_sha256": "f7c55ce920afab73566d55e0ea62931c47a6ea32b89c82196e41329da3c3555f",
+      "mask_sha256": "c57d084d8dea0728a250908e94aff7547de693fc51f6b032fcfcb113d1b06b5b"
+    },
+    {
+      "id": "ISIC_0010047",
+      "split": "evaluation",
+      "image_sha256": "3c60fce84d03631021fdb74c9eb135f33bd7bda9b749a1cf39689bcf61d331a7",
+      "mask_sha256": "de3a400cf4e8150d632f446b9a1a874ae9fca4cbfb746d3d015f50540e975797"
+    },
+    {
+      "id": "ISIC_0012550",
+      "split": "evaluation",
+      "image_sha256": "b60bfb4303842ac16e800d73f4d10efad95b042bfea9df9927836ed752d234fc",
+      "mask_sha256": "8b50ddd02c6606ea08d6b680ad4201cf8176a6f6f614aa076e974d1ca7ee3a44"
+    },
+    {
+      "id": "ISIC_0000177",
+      "split": "evaluation",
+      "image_sha256": "5e3da535cf6f4d6f24ea1c616585250c0c32c4286d512c37a2c0314779ba799e",
+      "mask_sha256": "5388beaea6dde5ad69d6e9ab6bcdad9627abb6951f064d69d882a20398d276a0"
+    }
+  ]
+}
