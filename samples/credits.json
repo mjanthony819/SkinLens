@@ -1,0 +1,12 @@
+{
+  "dataset": "ISIC 2018 Task 1",
+  "source": "https://challenge.isic-archive.com/data/",
+  "license": "CC-BY-NC 4.0",
+  "samples": [
+    "ISIC_0013573",
+    "ISIC_0014059",
+    "ISIC_0010018",
+    "ISIC_0012681"
+  ],
+  "note": "Downsampled for the demo; selected from the development split."
+}
