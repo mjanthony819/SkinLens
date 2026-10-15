@@ -1,0 +1,30 @@
+{
+  "variant": "otsu_gray",
+  "variant_description": "Plain Otsu on grayscale",
+  "pipeline_version": "1.0.0",
+  "split": "evaluation",
+  "n": 250,
+  "dataset": "ISIC 2018 Task 1 training subset",
+  "subset_seed": 2026,
+  "max_side": 512,
+  "clahe": false,
+  "metric_space": "Masks resized with nearest-neighbor to aspect-preserving max-side 512 images.",
+  "mean_dice": 0.5296109357342923,
+  "median_dice": 0.5834938819282242,
+  "mean_iou": 0.406365657781953,
+  "median_iou": 0.41192478557354545,
+  "dice_std": 0.27358145780437887,
+  "iou_std": 0.2520260410711198,
+  "mean_dice_bootstrap_95ci": [
+    0.4953286743018713,
+    0.5634656512485465
+  ],
+  "mean_iou_bootstrap_95ci": [
+    0.3749910156698948,
+    0.4374275588130668
+  ],
+  "iou_below_05": 154,
+  "quality_flagged": 228,
+  "clinical_classification_evaluated": false,
+  "code_sha256": "07cafe1101ba5f1b90ed4a1e18d310f1488eddde63fd4932deeb0c2e356a7f71"
+}
