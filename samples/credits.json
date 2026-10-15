@@ -2,11 +2,18 @@
   "dataset": "ISIC 2018 Task 1",
   "source": "https://challenge.isic-archive.com/data/",
   "license": "CC-BY-NC 4.0",
+  "attribution": "HAM10000 Dataset: (c) by ViDIR Group, Department of Dermatology, Medical University of Vienna; https://doi.org/10.1038/sdata.2018.161. MSK Dataset: (c) Anonymous; https://arxiv.org/abs/1710.05006; https://arxiv.org/abs/1902.03368. See DATA_LICENSE.md.",
   "samples": [
-    "ISIC_0013573",
-    "ISIC_0014059",
     "ISIC_0010018",
-    "ISIC_0012681"
+    "ISIC_0000306",
+    "ISIC_0000403",
+    "ISIC_0013573"
   ],
-  "note": "Downsampled for the demo; selected from the development split."
+  "demo_bands": {
+    "ISIC_0010018": "Low (score 18.4, IoU 0.72 vs expert mask)",
+    "ISIC_0000306": "Moderate (score 42.6, IoU 0.86)",
+    "ISIC_0000403": "High (score 71.0, IoU 0.69)",
+    "ISIC_0013573": "Unreliable - failure-quality example (quality gate fired, IoU 0.21)"
+  },
+  "note": "Downsampled to max side 512 for the demo; all four selected from the development split (first 50 of the seed-2026 shuffle), not the 250 evaluation images. Bands describe visual irregularity of the segmented region, not diagnosis."
 }
