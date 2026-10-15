@@ -1,0 +1,39 @@
+{
+  "all": {
+    "n": 250,
+    "mean_dice": 0.6618981814669038,
+    "median_dice": 0.7695803821877343,
+    "mean_iou": 0.5546656077982178,
+    "median_iou": 0.6254679627700666,
+    "iou_below_05": 84
+  },
+  "flagged": {
+    "n": 35,
+    "mean_dice": 0.41684053419607286,
+    "median_dice": 0.4852608393929336,
+    "mean_iou": 0.32609984085421806,
+    "median_iou": 0.3203593410752345,
+    "iou_below_05": 24
+  },
+  "unflagged": {
+    "n": 215,
+    "mean_dice": 0.7017912868365739,
+    "median_dice": 0.7848905624852907,
+    "mean_iou": 0.59187398846352,
+    "median_iou": 0.6459422816192136,
+    "iou_below_05": 60
+  },
+  "failures_total": 84,
+  "failures_caught_by_gate": 24,
+  "failures_missed_by_gate": 60,
+  "gate_recall_of_failures": 0.2857142857142857,
+  "unflagged_failure_rate": 0.27906976744186046,
+  "unreliable_band_rate": 0.14,
+  "unreliable_band_n": 35,
+  "band_counts": {
+    "Low": 98,
+    "Moderate": 79,
+    "High": 38,
+    "Unreliable": 35
+  }
+}
