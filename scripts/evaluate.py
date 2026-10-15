@@ -8,7 +8,7 @@ from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from skinlens.pipeline import analyze, overlap, VERSION
+from skinlens.pipeline import analyze, overlap, resize_rgb, segment, features, VERSION
 ROOT=Path(__file__).resolve().parents[1]
 
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'text.color':'#251f21','axes.titlecolor':'#251f21',
@@ -24,9 +24,25 @@ def result_figure(ident,image,truth,result,metrics,path,label_text):
     fig.text(.02,.015,'ISIC 2018 Task 1 | CC-BY-NC | Teal = predicted lesion. Segmentation overlap is not melanoma accuracy.',fontsize=9,color='#585254')
     fig.savefig(path,dpi=160,bbox_inches='tight',pad_inches=.2);plt.close(fig)
 
+VARIANTS={'full':'Full pipeline (default)','no_hair_removal':'Full pipeline without hair removal','otsu_gray':'Plain Otsu on grayscale'}
+
+def analyze_variant(image,variant,clahe=False):
+    """Ablations for the baseline table. 'full' is exactly pipeline.analyze; the others reuse its pieces."""
+    if variant=='full': return analyze(image,clahe)
+    rgb=resize_rgb(image)
+    if variant=='no_hair_removal':
+        mask=segment(rgb)
+    elif variant=='otsu_gray':
+        gray=cv2.cvtColor(rgb,cv2.COLOR_RGB2GRAY)
+        t,_=cv2.threshold(gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU); mask=gray<=t  # cv2 THRESH_BINARY_INV convention; no blur, morphology, or component selection
+    else: raise ValueError(variant)
+    return {'mask':mask,'features':features(rgb,mask)}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--data',type=Path,default=ROOT/'data');p.add_argument('--output',type=Path,default=ROOT/'reports')
-    p.add_argument('--split',choices=['development','evaluation'],default='evaluation');p.add_argument('--clahe',action='store_true');a=p.parse_args()
+    p.add_argument('--split',choices=['development','evaluation'],default='evaluation');p.add_argument('--clahe',action='store_true')
+    p.add_argument('--variant',choices=list(VARIANTS),default='full',help='Ablation variant; non-default variants write only metrics/per-image files to <output>/baselines/');a=p.parse_args()
+    if a.variant!='full': a.output=a.output/'baselines'/a.variant
     a.output.mkdir(parents=True,exist_ok=True)
     manifest=json.loads((a.data/'manifest.json').read_text());records=[r for r in manifest['records'] if r['split']==a.split]
     rows=[]
@@ -36,14 +52,14 @@ def main():
             if hashlib.sha256(path.read_bytes()).hexdigest()!=record[key]:raise ValueError(f'Checksum mismatch: {path}')
         image=np.array(Image.open(impath).convert('RGB'));truth=np.array(Image.open(mpath).convert('L'))>127
         if truth.shape!=image.shape[:2]:raise ValueError(f'Original mask/image dimensions disagree: {ident}')
-        result=analyze(image,a.clahe);truth=cv2.resize(truth.astype(np.uint8),result['mask'].shape[::-1],interpolation=cv2.INTER_NEAREST).astype(bool)
+        result=analyze_variant(image,a.variant,a.clahe);truth=cv2.resize(truth.astype(np.uint8),result['mask'].shape[::-1],interpolation=cv2.INTER_NEAREST).astype(bool)
         metrics=overlap(result['mask'],truth);rows.append({'id':ident,**metrics,'feature_score':result['features'].score,'feature_band':result['features'].band,
             'quality_flagged':bool(result['features'].warnings)})
         if (i+1)%25==0: print(f'{i+1}/{len(records)} evaluated',flush=True)
     if not rows:raise ValueError('No records in requested split')
     values={k:np.array([r[k] for r in rows]) for k in ['dice','iou']}
     rng=np.random.default_rng(2026);means={k:np.mean(v[rng.integers(0,len(v),(2000,len(v)))],axis=1) for k,v in values.items()}
-    summary={'pipeline_version':VERSION,'split':a.split,'n':len(rows),'dataset':manifest['dataset'],'subset_seed':manifest['seed'],
+    summary={**({'variant':a.variant,'variant_description':VARIANTS[a.variant]} if a.variant!='full' else {}),'pipeline_version':VERSION,'split':a.split,'n':len(rows),'dataset':manifest['dataset'],'subset_seed':manifest['seed'],
       'max_side':512,'clahe':a.clahe,'metric_space':'Masks resized with nearest-neighbor to aspect-preserving max-side 512 images.',
       'mean_dice':float(values['dice'].mean()),'median_dice':float(np.median(values['dice'])),
       'mean_iou':float(values['iou'].mean()),'median_iou':float(np.median(values['iou'])),
@@ -55,6 +71,8 @@ def main():
     (a.output/'metrics.json').write_text(json.dumps(summary,indent=2))
     with (a.output/'per_image.csv').open('w',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=rows[0].keys());writer.writeheader();writer.writerows(rows)
+    if a.variant!='full':
+        print(json.dumps(summary,indent=2));return
     ordered=sorted(rows,key=lambda r:r['iou'])
     chosen=[(ordered[round(.9*(len(rows)-1))],'Strong overlap (90th percentile)','example_strong.png'),
             (ordered[(len(rows)-1)//2],'Typical overlap (median)','example_typical.png'),
