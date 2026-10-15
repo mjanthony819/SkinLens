@@ -38,3 +38,29 @@ def test_clahe_and_colors():
 def test_bad_input():
     with pytest.raises(ValueError):analyze(np.zeros((8,8,3),np.uint8))
     with pytest.raises(ValueError):analyze(np.zeros((100,100),np.uint8))
+
+
+def _load_script(name):
+    import importlib.util, pathlib
+    path=pathlib.Path(__file__).resolve().parents[1]/'scripts'/f'{name}.py'
+    spec=importlib.util.spec_from_file_location(name,path); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod
+
+def test_auc_known_values():
+    v=_load_script('validate_score')
+    assert v.auc([1,2,3,4],[0,0,1,1])==1.0
+    assert v.auc([4,3,2,1],[0,0,1,1])==0.0
+    assert v.auc([1,1,1,1],[0,1,0,1])==0.5
+
+def test_baseline_variants_return_masks():
+    ev=_load_script('evaluate'); im=synthetic()
+    masks={v:ev.analyze_variant(im,v)['mask'] for v in ev.VARIANTS}
+    assert all(m.shape==im.shape[:2] for m in masks.values())
+    assert masks['otsu_gray'].sum()>0 and masks['otsu_gray'].dtype==bool
+
+def test_bundled_samples_show_band_variety():
+    import json, pathlib
+    from PIL import Image
+    root=pathlib.Path(__file__).resolve().parents[1]/'samples'
+    bands={p.stem:analyze(np.array(Image.open(p).convert('RGB')))['features'].band for p in root.glob('*.jpg')}
+    assert {'Moderate','High','Unreliable'} <= set(bands.values()), bands
+    assert json.loads((root/'credits.json').read_text())['license']=='CC-BY-NC 4.0'
