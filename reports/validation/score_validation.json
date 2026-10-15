@@ -1,0 +1,57 @@
+{
+  "pipeline_version": "1.0.0",
+  "dataset": "ISIC 2018 Task 3 training (HAM10000) ground truth, melanoma (MEL) vs all other classes",
+  "sampling": "seed 2026; 150 melanoma + 350 non-melanoma drawn without replacement (melanoma enriched vs ~11% in the dataset; AUC does not depend on prevalence)",
+  "all_images": {
+    "n": 500,
+    "melanoma": 150,
+    "auc": 0.6187238095238096,
+    "auc_bootstrap_95ci": [
+      0.5659350000000001,
+      0.670552619047619
+    ]
+  },
+  "unflagged_only": {
+    "n": 453,
+    "melanoma": 139,
+    "auc": 0.6303670439444623,
+    "auc_bootstrap_95ci": [
+      0.575397516381799,
+      0.681808756816203
+    ]
+  },
+  "flagged_count": 47,
+  "flagged_melanoma_fraction": 0.23404255319148937,
+  "component_auc": {
+    "asymmetry": {
+      "auc": 0.5822095238095238
+    },
+    "border": {
+      "auc": 0.534647619047619
+    },
+    "color": {
+      "auc": 0.6948952380952381
+    }
+  },
+  "bands": {
+    "Low": {
+      "n": 208,
+      "melanoma": 46
+    },
+    "Moderate": {
+      "n": 156,
+      "melanoma": 55
+    },
+    "High": {
+      "n": 89,
+      "melanoma": 38
+    },
+    "Unreliable": {
+      "n": 47,
+      "melanoma": 11
+    }
+  },
+  "bootstrap": "2000 stratified resamples, seed 2026",
+  "chance_auc": 0.5,
+  "scope": "Measures how well the hand-set score ranks melanoma above other lesions on dermoscopy images. Not clinical accuracy, sensitivity/specificity, or patient-level performance."
+}
