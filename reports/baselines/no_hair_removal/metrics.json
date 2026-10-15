@@ -1,0 +1,30 @@
+{
+  "variant": "no_hair_removal",
+  "variant_description": "Full pipeline without hair removal",
+  "pipeline_version": "1.0.0",
+  "split": "evaluation",
+  "n": 250,
+  "dataset": "ISIC 2018 Task 1 training subset",
+  "subset_seed": 2026,
+  "max_side": 512,
+  "clahe": false,
+  "metric_space": "Masks resized with nearest-neighbor to aspect-preserving max-side 512 images.",
+  "mean_dice": 0.6580408726166136,
+  "median_dice": 0.7549742532033064,
+  "mean_iou": 0.5529830749437485,
+  "median_iou": 0.6063948490324618,
+  "dice_std": 0.2979176743569344,
+  "iou_std": 0.2871000956441721,
+  "mean_dice_bootstrap_95ci": [
+    0.6207449211956835,
+    0.695620423885142
+  ],
+  "mean_iou_bootstrap_95ci": [
+    0.5156628808743116,
+    0.5873810112263126
+  ],
+  "iou_below_05": 88,
+  "quality_flagged": 28,
+  "clinical_classification_evaluated": false,
+  "code_sha256": "07cafe1101ba5f1b90ed4a1e18d310f1488eddde63fd4932deeb0c2e356a7f71"
+}
