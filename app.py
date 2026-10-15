@@ -61,8 +61,8 @@ cols[2].metric('C | Color groups',str(len(f.colors)));cols[2].caption(', '.join(
 cols[3].metric('D | Relative diameter',f'{100*f.relative_diameter:.1f}%');cols[3].caption('Major axis / longest image side. Not millimeters; excluded from scoring.')
 with st.expander('How the score works'):
     st.write('This is a custom ABCD-inspired rule, not the clinical total dermoscopy score (TDS). Clinical dermoscopy ABCD uses D for structures, not diameter.')
-    st.code('a = clip(asymmetry / 0.45, 0, 1)\nb = clip((compactness - 1) / 1.5, 0, 1)\nc = clip((color_count - 1) / 4, 0, 1)\nscore = 100 * (0.40*a + 0.30*b + 0.30*c)\nLow: <35 | Moderate: 35 to <65 | High: >=65',language='python')
-    st.write('Weights and thresholds are hand-set for demonstration. Diameter cannot be interpreted without a physical scale and is not used. No diagnosis labels or cancer classifier are used.')
+    st.code('a = clip(asymmetry / 0.45, 0, 1)\nb = clip((compactness - 1) / 1.5, 0, 1)\nc = clip((color_count - 1) / 4, 0, 1)\nscore = 100 * (0.40*a + 0.30*b + 0.30*c)\nLow: <35 | Moderate: 35 to <65 | High: >=65\nAny quality warning: Unreliable (result withheld)',language='python')
+    st.write('Four bands exist: Low, Moderate, High, and Unreliable, which replaces the band when a quality check fails (tiny or oversized region, edge contact, low contrast). Weights and thresholds are hand-set for demonstration. On 500 labelled HAM10000 images the score separates melanoma from other lesions only weakly (ROC-AUC 0.62, chance is 0.50), and the quality checks catch only about 29% of bad segmentations, so always check the outline. Diameter cannot be interpreted without a physical scale and is not used. No diagnosis labels or cancer classifier are used.')
     st.json({'normalized_components':f.components,'color_area_fractions':f.color_fractions,'segmented_area_fraction':f.area_fraction})
 with st.expander('Masks and downloadable results'):
     st.image(result['mask'].astype(np.uint8)*255,caption='Binary segmentation mask',width=300)
@@ -74,5 +74,9 @@ metric_path=ROOT/'reports'/'metrics.json'
 if metric_path.exists():
     m=json.loads(metric_path.read_text());st.divider();st.subheader('Measured segmentation performance')
     st.write(f'ISIC 2018 Task 1 | {m["n"]} evaluation images | Mean Dice {m["mean_dice"]:.3f} | Mean IoU {m["mean_iou"]:.3f}')
+    v=ROOT/'reports'/'validation'/'score_validation.json'
+    if v.exists():
+        sv=json.loads(v.read_text())['all_images'];st.write(f'Score vs melanoma (HAM10000, {sv["n"]} images) | ROC-AUC {sv["auc"]:.2f} (95% CI {sv["auc_bootstrap_95ci"][0]:.2f} to {sv["auc_bootstrap_95ci"][1]:.2f}) | chance 0.50')
+    st.caption('Quality gate limit: it flags 35 of 250 images but catches only 24 of the 84 segmentation failures (IoU < 0.5); 60 unflagged images still failed. No Unreliable label does not mean the outline is right.')
     st.caption('Measured mask overlap only, not sensitivity, specificity, melanoma accuracy, or clinical safety. Metrics apply to the default settings. Evaluation and failure examples are in reports/.')
 st.caption('Classical only: morphology, inpainting, Otsu thresholding, connected components, geometric features. No CNNs, no deep learning, no hidden model.')

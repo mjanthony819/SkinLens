@@ -7,7 +7,7 @@ diagnosis. It cannot tell whether a lesion is melanoma."
 
 ## 0:25-1:15 | Live app
 Run `bash run.sh`. Choose a bundled dermoscopy sample. Point to the original,
-hair-cleaned image, and teal predicted boundary. Switch sample images. Show the
+hair-cleaned image, and teal predicted boundary. Switch sample images: they cover Low, Moderate, High and one Unreliable failure-quality case, so show that the band changes and that Unreliable withholds the result. Show the
 CLAHE toggle and explain that the default benchmark leaves it off.
 
 ## 1:15-1:55 | Explainability
@@ -20,7 +20,7 @@ millimeter scale. Clinical TDS is a different rule and is not implemented here.
 Show the mean Dice 0.662 and mean IoU 0.555 on 250 held-out image-level samples
 from the ISIC 2018 training release. Open `reports/example_failure.png`: the
 largest-component rule selected an artifact rather than the small faint lesion.
-84 of 250 images have IoU below 0.5. A good-looking demo does not prove safety.
+84 of 250 images have IoU below 0.5, and the quality gate catches only 24 of those 84. The melanoma-vs-rest AUC of the score is 0.62 (CI 0.57 to 0.67) versus 0.5 for chance: weak, honestly reported. A good-looking demo does not prove safety.
 
 ## 2:35-3:00 | Reproducibility and next steps
 Show the source pipeline, download script, tests, manifest, and per-image CSV.
