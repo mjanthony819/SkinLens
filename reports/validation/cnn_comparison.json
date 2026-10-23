@@ -1,0 +1,50 @@
+{
+  "pipeline_version": "1.0.0",
+  "purpose": "Fair same-split comparison of the SkinLens hand-set score vs a conservative CNN baseline (frozen ImageNet backbone + logistic-regression probe).",
+  "dataset": "ISIC 2018 Task 3 training (HAM10000) ground truth, melanoma (MEL) vs all other classes",
+  "subset": "seed 2026; 150 melanoma + 350 non-melanoma, same subset as reports/validation/score_validation.json",
+  "n": 500,
+  "n_train": 350,
+  "n_test": 150,
+  "test_melanoma": 45,
+  "split": "LESION-GROUPED ~70/30 via ISIC2018_Task3_Training_LesionGroupings.csv (best of 200 seeded group shuffles, winning seed 0); verified: no lesion_id appears in both train and test",
+  "classical_score_on_test": {
+    "auc": 0.5986243386243386,
+    "auc_bootstrap_95ci": [
+      0.4997433862433862,
+      0.6893227513227512
+    ]
+  },
+  "cnn_linear_probe_on_test": {
+    "auc": 0.7261375661375662,
+    "auc_bootstrap_95ci": [
+      0.6357619047619048,
+      0.8143968253968255
+    ]
+  },
+  "sanity_classical_on_all500": 0.6187238095238096,
+  "paired_bootstrap_on_difference": {
+    "observed_auc_difference": 0.12751322751322758,
+    "diff_95ci": [
+      0.01395213995534177,
+      0.24206437326014896
+    ],
+    "p_diff_le_0": 0.016,
+    "method": "2000 bootstrap resamples of the 150 test images, same resample applied to both scorers; draws with a single class skipped"
+  },
+  "split_verification": {
+    "train_test_lesion_group_overlap": [],
+    "split_disjoint_by_lesion": true,
+    "official_grouping_file_header": "image,lesion_id,diagnosis_confirm_type",
+    "patient_id_available": false,
+    "lesions_with_multiple_images_full_dataset": 1956,
+    "lesions_with_multiple_images_in_subset": 12
+  },
+  "cnn_baseline": "torchvision mobilenet_v3_small, weights IMAGENET1K_V1 (ImageNet-1k pretrained, frozen), 576-d avgpool features + StandardScaler + LogisticRegression(C=1, max_iter=2000). Resize 256, center crop 224, ImageNet normalisation.",
+  "scope": [
+    "The split is grouped by lesion_id, NOT by patient: the official grouping file carries no patient identifier, so different lesions from the same patient may appear on both sides.",
+    "One small enriched sample (500 images, 30% melanoma). This is not clinical accuracy and not an external validation.",
+    "The frozen-backbone linear probe is a deliberately conservative CNN baseline; this result says nothing about what an optimised or fine-tuned model would achieve."
+  ],
+  "bootstrap": "individual CIs: 2000 stratified resamples, seed 2026 (identical code to scripts/validate_score.py)"
+}
